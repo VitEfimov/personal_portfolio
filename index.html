@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/02b9f7c904.js" crossorigin="anonymous"></script>
+    <title>Personal portfolio Vit Efimov</title>
+</head>
+
+<body>
+
+    <!-- navigation menu -->
+    <nav class="navbar">
+        <img src="./assets/images/logo.png" class="navbar__logo">
+        <ul class="navbar__menu" id="sidemenu">
+            <li class="navbar__menu-item"><a href="#header" onclick="closeMenu()">Home</a></li>
+            <li class="navbar__menu-item"><a href="#about" onclick="closeMenu()">About</a></li>
+            <li class="navbar__menu-item"><a href="#services" onclick="closeMenu()">Services</a></li>
+            <li class="navbar__menu-item"><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+            <li class="navbar__menu-item"><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            <i class="fas fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fas fa-bars navbar__menuclose" id="menuicon" onclick="openMenu()"></i>
+    </nav>
+
+
+    <div class="parallax first">
+        <!-- header -->
+        <div id="header">
+            <div class="container">
+                <div class="header-container">
+                    <div id="header-writer" onload="typeWriter()"></div>
+                    <!-- <p id="header-writer" onload="typeWriter()" ></p> -->
+                    <div class="header">
+                        <h1 class="header__title">Hi, I'm <span class="header__name">Vit</span> Efimov</h1>
+                        <p class="header__subtitle">QA Test Automation Engineer<br>Full-Stack Web Developer</p>
+                    </div>
+
+
+                    <!-- banner -->
+                    <div class="banner">
+                        <div class="banner-conteiner">
+                            <img class="banner-conteiner__slide" src="./assets/images/FoodOrderApp.jpg" alt="">
+                            <img class="banner-conteiner__slide" src="./assets/images/ecommerceApp.jpg" alt="">
+                            <img class="banner-conteiner__slide" src="./assets/images/trelloApp.png" alt="">
+                        </div>
+
+                        <!-- banner navigation dots -->
+                        <div class="navigation-dots">
+                            <span class="navigation-dots__dot"></span>
+                            <span class="navigation-dots__dot"></span>
+                            <span class="navigation-dots__dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="header-writer" onload="typeWriter()"></div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="about__content">
+                <div class="about__content__col1">
+                    <img src="./assets/images/portrait.jpg">
+                </div>
+                <div class="about__content__col2">
+                    <h1 class="sub__title">About Me</h1>
+                    <p class="about__description">
+                        Self-driven QA Test Automation Engineer and aspiring Full-Stack Web Developer with expertise in
+                        Java,
+                        JavaScript, Selenium WebDriver, Cucumber BDD, and Agile Scrum. Enthusiastic about web
+                        development,
+                        RESTful APIs, Node.js, React, and databases.</p>
+                    <div class="about__links">
+                        <p class="about__link active_link" onclick="openTab('skills')">Skills</p>
+                        <p class="about__link" onclick="openTab('experiance')">Experiance</p>
+                        <p class="about__link" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="about__content-tab active_tab" id="skills">
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <span class="about__item-title">QA Test Automation Engineer</span>
+                                <br>
+                                <p class="about__item-content">Manual and automation testing of web
+                                    applications</p>
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">Web Development</span>
+                                <br>
+                                <p class="about__item-content">Designed and implemented the front-end back-end app</p>
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">Sales</span>
+                                <br>
+                                <p class="about__item-content">Sale of high-tech industrial equipment</p>
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">Management</span><br>
+                                <p class="about__item-content">Organization and Management of the Foreign Economic
+                                    Activity Department, including Sales, Production Coordination, Logistics, and
+                                    Primary Accounting</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about__content-tab" id="experiance">
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <span class="about__item-title">2023-current</span>
+                                <br>
+
+                                <!-- /??????????????????????????????????????????????????????? -->
+
+
+                                <p class="about__item-content">Upwork</p>
+                                <ul class="about__item-subcontent">
+                                    <li>Collaborated with clients to understand project requirements, scope,
+                                        and objectives.</li>
+                                    <li>Executed test cases, identified and reported software defects, and
+                                        verified bug fixes.</li>
+                                    <li>Conducted functional, regression, and usability testing on web and
+                                        mobile applications.</li>
+                                    <li>Utilized various testing tools and methodologies to ensure software
+                                        quality and functionality.</li>
+                                </ul>
+
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">2022-2023</span>
+                                <br>
+                                <p class="about__item-content">Tumbcloud (Project)</p>
+                                <ul class="about__item-subcontent">
+                                    <li>Implemented Behavior Driven Development (BDD) approach with
+                                        Cucumber, creating Gherkin-format Feature files aligned with user stories.</li>
+                                    <li>Executed feature files using Cucumber runner options to validate
+                                        application functionalities, ensuring adherence to requirements.</li>
+                                    <li>Designed, built, and supported automated CI/CD tools on AWS using
+                                        Jenkins, contributing to efficient deployment pipelines.</li>
+                                    <li>Verified REST Web Services APIs through CRUD operations (GET, POST,
+                                        PUT, DELETE) to ensure valid JSON/XML responses.</li>
+                                </ul>
+
+
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">2022-2023</span>
+                                <br>
+                                <p class="about__item-content">Locaper (Project)</p>
+                                <ul class="about__item-subcontent">
+                                    <li>Spearheaded the development and design of an automation framework for
+                                        a web-based application, leveraging Java, Selenium WebDriver, TestNG, and
+                                        Maven.</li>
+                                    <li>Implemented the Page Object Model (POM) design pattern within the
+                                        framework to enhance maintainability and scalability.</li>
+                                    <li>Utilized Selenium WebDriver extensively for API testing, ensuring robust
+                                        and reliable automation of web applications.</li>
+                                    <li>Collaborated actively in test case preparation using Selenium WebDriver,
+                                        validating UI components, popups, windows, and mouse movements.</li>
+                                </ul>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about__content-tab" id="education">
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <span class="about__item-title">May 2023 - January 2024
+                                </span>
+                                <br>
+                                <p class="about__item-content">McCombs School of Business,
+                                    The University of Texas at Austin.</p>
+                                <p class="about__item-subcontent">Professional Certificate in Full Stack Software
+                                    Development: Building
+                                    Scalable Cloud Applications.</p>
+
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">June 2022 - January 2023</span>
+                                <br>
+                                <p class="about__item-content">Cydeo.</p>
+                                <p class="about__item-subcontent">
+                                    Certificate in Software Development
+                                    Engineer in Test.</p>
+
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">November 2012 – June 2013</span>
+                                <br>
+                                <p class="about__item-content">Amur State University.<br>
+                                <p class="about__item-subcontent">Professional
+                                    Certificate in Business Administration & Strategic
+                                    Management.</p>
+                                </p>
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">September 2001 – June
+                                    2007</span>
+                                <p class="about__item-content">Blagoveshchensk State Pedagogical University.</p>
+                                <p class="about__item-subcontent">Bachelor of Science
+                                    Concentration: Mathematics, Physics.</p>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax second">
+        <!-- services -->
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="modal-text"></p>
+            </div>
+        </div>
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub__title">My Services</h1>
+                <div class="services__list">
+                    <div class="services__item learn-more">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>QA Test Automation Engineer</h2>
+                        <p>QA Test Automation Engineer skilled in Java, JavaScript, Selenium WebDriver, Cucumber BDD,
+                            and
+                            Agile methodologies, with experience in executing...</p>
+                        <p class="services__item-hidden">test cases, identifying defects, and conducting functional and regression
+                            testing
+                            for web and mobile applications.</p>
+                        <a class="learn-more">Learn more...</a>
+                    </div>
+                    <div class="services__item learn-more">
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Web Developer</h2>
+                        <p>Web development skills include proficiency in Back-End Development with Node.js and
+                            ExpressJs,
+                            Front-End Development using React, JQuery, and...</p>
+                        <p class="services__item-hidden">Bootstrap, database management with MySQL, MongoDB, and Oracle, and Full-Stack
+                            Development with the MERN Stack, showcasing his versatility and comprehensive understanding
+                            of
+                            web development technologies.</p>
+                        <a class="learn-more">Learn more...</a>
+                    </div>
+                    <div class="services__item learn-more">
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Sales and management</h2>
+                        <p>During my tenure as Manager/Regional Director of Sales and Marketing at Shanghai
+                            Technologies, I
+                            provided leadership to a team of 12 staff... </p>
+                        <p class="services__item-hidden">members, organized sales forecasting and planning activities, executed
+                            innovative
+                            marketing strategies, and offered market insights to optimize pricing and marketing
+                            strategies,
+                            driving revenue growth.</p>
+                        <a class="learn-more">Learn more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub__title">Projects</h1>
+            <div class="project__list"
+            
+             >
+                <div class="project">
+                    <img src="./assets/images/ecommerceApp.jpg" alt="ecommerceApp">
+                    <div class="layer">
+                        <h3>EcommerceApp</h3>
+                        <div class="description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dolor maiores minima iusto
+                            tempora sint exercitationem maxime ea harum necessitatibus cum qui, amet laborum ut. Odit
+                            dolores minima veniam inventore?
+                        </div>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./assets/images/FoodOrderApp.jpg" alt="FoodOrderApp">
+                    <div class="layer">
+                        <h3>FoodOrderApp</h3>
+                        <div class="description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit molestias incidunt, iste
+                            voluptate consequuntur eius ipsam alias ullam amet maxime sequi vero. Praesentium quasi cum
+                            iusto, aspernatur eaque maiores rerum.
+                        </div>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./assets/images/trelloApp.png" alt="trelloApp">
+                    <div class="layer">
+                        <h3>trelloApp</h3>
+                        <div class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis sed quasi autem commodi
+                            distinctio laboriosam delectus porro culpa qui, eius animi illo ipsum veniam consectetur
+                            saepe doloremque voluptates ipsa reprehenderit.
+                        </div>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project hidden">
+                    <img src="./assets/images/cucumber.jpg" alt="cucumber">
+                    <div class="layer">
+                        <h3>cucumber</h3>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quibusdam quidem eos, totam
+                            delectus reiciendis ducimus! Commodi eaque obcaecati, nobis enim ratione soluta officiis
+                            alias nisi repudiandae laudantium at sunt.
+                        </div>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project hidden">
+                    <img src="./assets/images/cypress.png" alt="cypress">
+                    <div class="layer">
+                        <h3>cypress</h3>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consequatur aperiam
+                            quod
+                            nulla, fugit voluptatum repellendus minus at pariatur illo beatae ab facilis iste ipsum
+                            similique quos cupiditate ad?
+                        </div>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+               
+                <!-- <div class="project__list hidden" id="hidden">
+                    <div class="project">
+                        <img src="./assets/images/cucumber.jpg" alt="cucumber">
+                        <div class="layer">
+                            <h3>cucumber</h3>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quibusdam quidem eos, totam
+                                delectus reiciendis ducimus! Commodi eaque obcaecati, nobis enim ratione soluta officiis
+                                alias nisi repudiandae laudantium at sunt.
+                            </div>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="./assets/images/cypress.png" alt="cypress">
+                        <div class="layer">
+                            <h3>cypress</h3>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consequatur aperiam
+                                quod
+                                nulla, fugit voluptatum repellendus minus at pariatur illo beatae ab facilis iste ipsum
+                                similique quos cupiditate ad?
+                            </div>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <button class="see-more btn fade-in">
+                See more
+            </button>
+        </div>
+    </div>
+    <div class="parallax third">
+        <!-- contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact_left">
+                        <h1 class="sub__title">Contact</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> vitvalef@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 813-465-4298</p>
+                        <div class="social_icons">
+                            <a href="https://linkedin.com/in/vit-e-b56118276"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://github.com/VitEfimov"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="assets/files/Vit_Efimov_Resume.pdf" download class="btn btn_cv">Download CV</a>
+                    </div><hr/>
+                    <div class="contact_right">
+                        
+                        <h3 class="sub__title">Contact form</h3><br />
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Input Your Name" required>
+                            <input type="email" name="Email" placeholder="Input Your email" required>
+                            <textarea name="Message" rows="8" placeholder="Leave Your message" required></textarea>
+                            <button type="submit" class="btn btn_cv">
+                                <!-- <a href="#header"></a> -->
+                                Submit </button>
+                        </form>
+                        <span id="resMsg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright © Vit</div>
+    </div>
+
+
+    <!-- modal window -->
+
+    <script>
+        document.querySelectorAll('.learn-more').forEach(item => {
+            item.addEventListener('click', event => {
+                const parentDiv = event.target.parentElement;
+                let firstParagraph = parentDiv.querySelector('p').textContent.trim();
+                firstParagraph = firstParagraph.substring(0,firstParagraph.length - 3)
+                const secondParagraph = parentDiv.querySelector('p.services__item-hidden').textContent;
+                const serviceName = parentDiv.querySelector('h2').textContent; 
+                const modalText = document.querySelector('.modal-text');
+                modalText.innerHTML = `<h2>${serviceName}</h2><p>${firstParagraph} ${secondParagraph}</p>`;
+                const modal = document.getElementById('myModal');
+                modal.style.display = "block";
+                modal.style.color = "black";
+            });
+        });
+
+        // Close the modal when the close button is clicked
+        document.querySelector('.close').addEventListener('click', () => {
+            const modal = document.getElementById('myModal');
+            modal.style.display = "none";
+        });
+
+        // Close the modal when the user clicks outside of it
+        window.addEventListener('click', event => {
+            const modal = document.getElementById('myModal');
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+
+
+    </script>
+
+    <!-- see more btn -->
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const seeMoreBtn = document.querySelector('.see-more');
+    const hiddenProjects = document.querySelectorAll('.project__list .hidden');
+    const projectList = document.querySelector('.project__list');
+
+    function openProject() {
+        if (projectList.classList.contains('project__list')) {
+            hiddenProjects.forEach(project => {
+                project.classList.remove('hidden');
+            });
+            projectList.classList.remove('project__list');
+            projectList.classList.add('project__list-column');
+            seeMoreBtn.textContent = "See less";
+            seeMoreBtn.classList.add('clicked'); // Add 'clicked' class
+            setTimeout(() => {
+                seeMoreBtn.classList.remove('clicked'); // Remove 'clicked' class after 0.3s
+            }, 3000);
+        } else {
+            hiddenProjects.forEach(project => {
+                project.classList.add('hidden');
+            });
+            projectList.classList.remove('project__list-column');
+            projectList.classList.add('project__list');
+            seeMoreBtn.textContent = "See more";
+            seeMoreBtn.classList.add('clicked'); // Add 'clicked' class
+            setTimeout(() => {
+                seeMoreBtn.classList.remove('clicked'); // Remove 'clicked' class after 0.3s
+            }, 3000);
+        }
+        // seeMoreBtn.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        const offset = hiddenProjects.length * (20); // Calculate the offset based on the height of each project and gap
+        seeMoreBtn.style.top = offset + 'px';
+    }
+
+    seeMoreBtn.addEventListener('click', openProject);
+});
+
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const seeMoreBtn = document.querySelector('.see-more');
+//     const hiddenProjects = document.querySelectorAll('.project__list .hidden');
+//     const projectList = document.querySelector('.project__list');
+// // seeMoreBtn.addEventListener('click', () => {
+// //   seeMoreBtn.classList.add('fade-in');
+// // })
+
+// // seeMoreBtn.addEventListener('transitionend', () => {
+// //   seeMoreBtn.classList.remove('fade-in');
+// // })
+
+// // const handleSeeMoreClick = () => {
+// //     const seeMoreBtn = document.querySelector('.see-more .btn');
+// //     seeMoreBtn.classList.add('clicked'); // Add 'clicked' class
+// //     setTimeout(() => {
+// //         seeMoreBtn.classList.remove('clicked'); // Remove 'clicked' class after 0.3s
+// //     }, 300);
+// //     // Other actions you want to perform on see more click
+// // };
+
+//     function openProject() {
+//         if (projectList.classList.contains('project__list')) {
+//             hiddenProjects.forEach(project => {
+//                 project.classList.remove('hidden');
+//             });
+//             projectList.classList.remove('project__list');
+//             projectList.classList.add('project__list-column');
+//             seeMoreBtn.textContent = "See less";
+//             seeMoreBtn.classList.add('clicked'); // Add 'clicked' class
+//     setTimeout(() => {
+//         seeMoreBtn.classList.remove('clicked'); // Remove 'clicked' class after 0.3s
+//     }, 3000);
+//         } else {
+//             hiddenProjects.forEach(project => {
+//                 project.classList.add('hidden');
+//             });
+//             projectList.classList.remove('project__list-column');
+//             projectList.classList.add('project__list');
+//             seeMoreBtn.textContent = "See more";
+//             seeMoreBtn.classList.add('clicked'); // Add 'clicked' class
+//     setTimeout(() => {
+//         seeMoreBtn.classList.remove('clicked'); // Remove 'clicked' class after 0.3s
+//     }, 3000);
+//         }
+//         // seeMoreBtn.scrollIntoView({ behavior: 'smooth', block: 'end' });
+//         const offset = hiddenProjects.length * (20); // Calculate the offset based on the height of each project and gap
+//         seeMoreBtn.style.top = offset + 'px';
+//     }
+
+//     seeMoreBtn.addEventListener('click', openProject);
+// });
+
+
+    </script>
+
+    <!-- services script -->
+    <script>
+
+        // document.querySelectorAll('.learn-more').forEach(item => {
+        //     item.addEventListener('click', event => {
+        //         const parentDiv = event.target.parentElement;
+        //         const secondParagraph = parentDiv.querySelector('p.hidden');
+        //         secondParagraph.classList.toggle('show');
+        //     });
+        // });
+    </script>
+
+
+
+    <!-- script navigation menu -->
+
+    <script>
+        var sideMenu = document.getElementById("sidemenu");
+        var sideMenuIcon = document.getElementById("menuicon");
+        function openMenu() {
+            sideMenu.style.right = "0px";
+            sideMenuIcon.style.display = "none";
+            sideMenuIcon.style.right = "-500px";
+        }
+        function closeMenu() {
+            sideMenu.style.right = "-500px";
+            sideMenuIcon.style.display = "block";
+            sideMenuIcon.style.right = "0px";
+        }
+    </script>
+
+    <!-- banner script -->
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.banner-conteiner__slide');
+        const dots = document.querySelectorAll('.navigation-dots__dot');
+
+        showSlide();
+
+        function showSlide() {
+
+            slides.forEach(slide => slide.style.opacity = 0);
+            dots.forEach(dot => dot.classList.remove("active"));
+
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.opacity = 1;
+            dots[slideIndex - 1].classList.add("active");
+
+            setTimeout(showSlide, 5000);
+        }
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                slideIndex = index;
+                showSlide();
+            });
+        });
+    </script>
+
+    <!-- script google sheet -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbynna31z8cZmJzdRDaLDND30B1_UnPb-DY4U-IIsnpGaN-4CTdKcoX04-Z_kZ7YaLK2qg/exec'
+        const form = document.forms['submit-to-google-sheet'];
+
+        const msg = document.getElementById('resMsg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+
+</html>

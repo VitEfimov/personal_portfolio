@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/02b9f7c904.js" crossorigin="anonymous"></script>
+    <title>Personal portfolio Vit Efimov</title>
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="container"></div>
+        <nav>
+            <img src="../assets/images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header">
+            <div class="header-container">
+                <h1>Hi, I'm <span>Vit</span><br> Efimov</h1>
+                <!-- <div class="banner-container">
+                    <img id="bannerImage" src="./assets/images/FoodOrderApp.jpg" alt="Banner Image">
+                </div> -->
+            </div>
+            <p>QA Test Automation Engineer<br>Full-Stack Web Developer</p>
+        </div>
+
+        <!-- banner -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="../assets/images/FoodOrderApp.jpg" alt="Image 1">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../assets/images/ecommerceApp.jpg" alt="Image 2">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../assets/images/trelloApp.png" alt="Image 2">
+            </div>
+            <!-- Add more slides as needed -->
+
+            <!-- Navigation dots -->
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <!-- Add more dots for additional slides -->
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+<!-- <div id="header">
+    <div class="container">
+        <div class="header__container">
+            <h1 class="header__title">Hi, I'm <span class="header__name">Vit</span> Efimov</h1>
+        </div>
+        <p class="header__subtitle">QA Test Automation Engineer<br>Full-Stack Web Developer</p>
+    </div>
+</div> -->
+
+<!-- banner -->
+<!-- <div class="banner-container">
+    <div class="banner">
+        <img src="./assets/images/FoodOrderApp.jpg" alt="" class="banner-conteiner__slide">
+        <img src="./assets/images/ecommerceApp.jpg" alt="" class="banner-conteiner__slide">
+        <img src="./assets/images/trelloApp.png" alt="" class="banner-conteiner__slide">
+    </div> -->
+    <!-- banner navigation dots -->
+    <!-- <div class="navigation-dots">
+        <span class="navigation-dots__dot"></span>
+        <span class="navigation-dots__dot"></span>
+        <span class="navigation-dots__dot"></span>
+    </div>
+</div> --> 
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_co1_1">
+                    <img src="../assets/images/portrait.jpg" alt="Portrait">
+                </div>
+                <div class="about_co1_2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>
+                        Self-driven QA Test Automation Engineer and aspiring Full-Stack Web Developer with expertise in
+                        Java,
+                        JavaScript, Selenium WebDriver, Cucumber BDD, and Agile Scrum. Enthusiastic about web
+                        development,
+                        RESTful APIs, Node.js, React, and databases.</p>
+                    <div class="tab_titles">
+                        <p class="tab_link active_link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab_link" onclick="openTab('experiance')">Experiance</p>
+                        <p class="tab_link" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>QA Test Automation Engineer</span><br>Manual and automation testing of web
+                                applications.
+                            </li>
+                            <li>
+                                <span>Web Development</span><br>Designed and implemented the front-end back-end app.
+                            </li>
+                            <li>
+                                <span>Some skill</span><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="experiance">
+                        <ul>
+                            <li>
+                                <span>2023-current</span><br>Upwork
+                            </li>
+                            <li>
+                                <span>2022-2023</span><br>Tumbcloud (Project)
+                                .
+                            </li>
+                            <li>
+                                <span>2022-2023</span><br>Locaper (Project).
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="education">
+                        <ul>
+                            <li>
+                                <span>McCombs School of Business,
+                                    The University of Texas at Austin.
+                                </span><br>May 2023 - January 2024<br>Professional Certificate in Full Stack Software
+                                Development: Building
+                                Scalable Cloud Applications.
+                            </li>
+                            <li>
+                                <span>Cydeo.</span><br>June 2022 - January 2023<br>Certificate in Software Development
+                                Engineer in Test.
+                            </li>
+                            <li>
+                                <span>Amur State University.</span><br>November 2012 – June 2013<br>Professional
+                                Certificate in Business Administration & Strategic
+                                Management.
+                            </li>
+                            <li>
+                                <span>Blagoveshchensk State Pedagogical University.</span><br>September 2001 – June
+                                2007<br>Bachelor of Science
+                                Concentration: Mathematics, Physics.
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>QA Test Automation Engineer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis earum assumenda vitae fugit
+                    molestias. Nesciunt deserunt laborum culpa quo quam aut possimus temporibus placeat, libero
+                    alias quisquam unde. Dolores, vel!</p>
+                <a href="/">Learn more...</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Developer</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis placeat beatae cupiditate
+                    laudantium sint, magnam perspiciatis omnis dolorum in ab. Iusto eum sunt quisquam quia cum iure
+                    cupiditate aliquid doloribus.</p>
+                <a href="/">Learn more...</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Some skill</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fuga cupiditate dolorum nesciunt,
+                    deleniti voluptates ut similique animi, magni atque nulla doloribus repellendus alias mollitia
+                    reiciendis nihil, inventore accusantium excepturi.</p>
+                <a href="/">Learn more...</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">My work</h1>
+            <h2>Projects</h2>
+            <div class="project_list">
+                <div class="project">
+
+                    <img src="../assets/images/ecommerceApp.jpg" alt="ecommerceApp">
+                    <div class="layer">
+                        <h3>EcommerceApp</h3>
+                        <div class="description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dolor maiores minima iusto
+                            tempora sint exercitationem maxime ea harum necessitatibus cum qui, amet laborum ut. Odit
+                            dolores minima veniam inventore?
+                        </div>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../assets/images/FoodOrderApp.jpg" alt="FoodOrderApp">
+                    <div class="layer">
+                        <h3>FoodOrderApp</h3>
+                        <div class="description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit molestias incidunt, iste
+                            voluptate consequuntur eius ipsam alias ullam amet maxime sequi vero. Praesentium quasi cum
+                            iusto, aspernatur eaque maiores rerum.
+                        </div>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../assets/images/trelloApp.png" alt="trelloApp">
+                    <div class="layer">
+                        <h3>trelloApp</h3>
+                        <div class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis sed quasi autem commodi
+                            distinctio laboriosam delectus porro culpa qui, eius animi illo ipsum veniam consectetur
+                            saepe doloremque voluptates ipsa reprehenderit.
+                        </div>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a class="btn" href="#">See more</a>
+            <h2>Test</h2>
+
+            <div class="project_list">
+                <div class="project">
+                    <img src="../assets/images/cucumber.jpg" alt="cucumber">
+                    <div class="layer">
+                        <h3>cucumber</h3>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quibusdam quidem eos, totam
+                            delectus reiciendis ducimus! Commodi eaque obcaecati, nobis enim ratione soluta officiis
+                            alias nisi repudiandae laudantium at sunt.
+                        </div>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../assets/images/cypress.png" alt="cypress">
+                    <div class="layer">
+                        <h3>cypress</h3>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consequatur aperiam quod
+                            nulla, fugit voluptatum repellendus minus at pariatur illo beatae ab facilis iste ipsum
+                            similique quos cupiditate ad?
+                        </div>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="sub_title">Contact</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> vitvalef@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 813-465-4298</p>
+                    <div class="social_icons">
+                        <a href="https://linkedin.com/in/vit-e-b56118276"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/VitEfimov"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="assets/files/Vit_Efimov_Resume.pdf" download class="btn btn_cv">Download CV</a>
+                </div>
+                <div class="contact_right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Input Your Name" required>
+                        <input type="email" name="Email" placeholder="Input Your email">
+                        <textarea name="Message" rows="8" placeholder="Leave Your message"></textarea>
+                        <button type="submit" class="btn btn_cv">
+                            <!-- <a href="#header"></a> -->
+                            Submit </button>
+                    </form>
+                    <span id="resMsg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright © Vit</div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        var sideMenu = document.getElementById("sidemenu");
+function openMenu() {
+    sideMenu.style.right = "0px";
+    
+}
+function closeMenu() {
+    sideMenu.style.right = "-500px";
+    
+}
+</script>
+<script>
+    /////banner
+const bannerImages = ["./assets/images/ecommerceApp.jpg","./assets/images/FoodOrderApp.jpg","./assets/images/trelloApp.png"];
+let currentImageIndex = 0;
+
+function changeBannerImage() {
+  const bannerImage = document.getElementById('bannerImage');
+  bannerImage.style.opacity = 0;
+
+  setTimeout(() => {
+    currentImageIndex = (currentImageIndex + 1) % bannerImages.length;
+    bannerImage.src = bannerImages[currentImageIndex];
+    bannerImage.style.opacity = 1;
+  }, 500);
+}
+
+// Change image every 3 seconds (3000 milliseconds)
+setInterval(changeBannerImage, 3000);
+
+// Initial image change (optional)
+changeBannerImage();
+
+
+//dynamic banner images
+let slideIndex = 0;
+
+function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    console.log("slides", slides);
+    const dots = document.getElementsByClassName("dot");
+    console.log("dot", dots);
+
+    // Hide all slides
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        console.log(slides[i]);
+    }
+
+    // Increment index and reset if at the end
+    slideIndex++;
+    console.log(slideIndex);
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    // Display the current slide
+    slides[slideIndex - 1].style.display = "block";
+
+    // Set active dot
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    dots[slideIndex - 1].className += " active";
+
+    // Change slide every 3 seconds (adjust as needed)
+    setTimeout(showSlides, 3000);
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbynna31z8cZmJzdRDaLDND30B1_UnPb-DY4U-IIsnpGaN-4CTdKcoX04-Z_kZ7YaLK2qg/exec'
+    const form = document.forms['submit-to-google-sheet'];
+
+    const msg = document.getElementById('resMsg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function () {
+                msg.innerHTML = "";
+            },5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </script>
+</body>
+
+</html>

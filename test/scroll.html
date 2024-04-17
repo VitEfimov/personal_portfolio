@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scroll.css">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: #282828;
+            margin: 0rem;
+            overflow: hidden;
+        }
+
+        .image-track > .image {
+            width: 40vmin;
+            height: 56vmin;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .image-track {
+            display: flex;
+            gap: 4vmin;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
+        <img class="image" src="../assets/images/portrait.jpg" alt="" draggable="false">
+        <img class="image" src="../assets/images/cucumber.jpg" alt="cucumber" draggable="false">
+        <img class="image" src="../assets/images/cypress.png" alt="trelloApp" draggable="false">
+        <img class="image" src="../assets/images/ecommerceApp.jpg" alt="FoodOrderApp" draggable="false">
+        <img class="image" src="../assets/images/FoodOrderApp.jpg" alt="ecommerceApp" draggable="false">
+        <img class="image" src="../assets/images/portrat.png" alt="ecommerceApp" draggable="false">
+        <img class="image" src="../assets/images/trelloApp.png" alt="ecommerceApp" draggable="false">
+    </div>
+
+    <script>
+        const track = document.querySelector(".image-track");
+        window.onmousedown = e => {
+            track.dataset.mouseDownAt = e.clientX;
+        };
+        window.onmouseup = () => {
+            track.dataset.mouseDownAt = "0";
+            track.dataset.prevPercentage = track.dataset.percentage;
+        };
+
+        window.onmousemove = e => {
+            if (track.dataset.mouseDownAt === "0") return;
+
+            const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX;
+            const maxDelta = window.innerWidth / 2;
+
+            let percentage = (mouseDelta / maxDelta) * -100;
+            const nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage;
+            percentage = Math.min(0, Math.max(-100, nextPercentage));
+
+            track.dataset.percentage = percentage;
+
+            track.style.transform = `translate(${percentage}%, -50%)`;
+
+            for (const image of track.querySelectorAll(".image")) {
+                image.style.objectPosition = `${percentage + 100}% 50%`;
+            }
+        };
+    </script>
+</body>
+
+</html>

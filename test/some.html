@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            overflow: hidden; /* Hide overflow */
+            border-radius: 10px;
+        }
+
+        /* Container for background slides */
+        .background-slides {
+            width: 100%; /* Full width */
+            height: 400px; /* Set the desired height */
+            position: relative;
+            background-color: green;
+            border-radius: 10px;
+        }
+
+        /* Individual slide */
+        .background-slides .slide {
+            position: absolute;
+            background-color: green;
+            border-radius: 10px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0; /* Initially hide all slides */
+            transition: opacity 1s ease-in-out; /* Smooth transition */
+        }
+
+        /* Initially show the first slide */
+        .background-slides .slide:first-child {
+            opacity: 1;
+        }
+
+        /* Style the navigation dots */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #041e01;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.6s ease;
+        }
+
+        /* Set the active dot color */
+        .active {
+            background-color: red;
+        }
+        .main{
+            display: flex;
+        }
+        .header{
+            flex-basis: 25%;
+        }
+        .slideshow-container{
+            margin: 10px;
+            flex-basis: 75%;
+        }
+        .line{
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+    <div class="header">
+        <div class="header-container">
+            <h1>Hi, I'm <span>Vit</span><br> Efimov</h1>
+            <!-- <div class="banner-container">
+                <img id="bannerImage" src="./assets/images/FoodOrderApp.jpg" alt="Banner Image">
+            </div> -->
+
+        </div>
+        <p>QA Test Automation Engineer<br>Full-Stack Web Developer</p>
+    </div>
+    <!-- banner -->
+    <div class="slideshow-container">
+        <div class="background-slides">
+            <div class="slide" style="background-image: url('./assets/images/FoodOrderApp.jpg');"></div>
+            <div class="slide" style="background-image: url('./assets/images/ecommerceApp.jpg');"></div>
+            <div class="slide" style="background-image: url('./assets/images/trelloApp.png');"></div>
+            <!-- Add more slides as needed -->
+        </div>
+
+        <!-- Navigation dots -->
+        <div class="line" style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <!-- Add more dots for additional slides -->
+        </div>
+    </div>
+</div>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.background-slides .slide');
+        const dots = document.querySelectorAll('.dot');
+
+        // Call showSlides initially to start the slideshow
+        showSlide();
+
+        function showSlide() {
+            // Hide all slides and remove the 'active' class from dots
+            slides.forEach(slide => slide.style.opacity = 0);
+            dots.forEach(dot => dot.classList.remove("active"));
+
+            // Increment index and reset if at the end
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            // Display the current slide and set the 'active' class on the corresponding dot
+            slides[slideIndex - 1].style.opacity = 1;
+            dots[slideIndex - 1].classList.add("active");
+
+            // Change slide every 3 seconds (adjust as needed)
+            setTimeout(showSlide, 3000);
+        }
+
+        // Add event listener to each dot to change the slide on click
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                slideIndex = index; // Update slide index
+                showSlide(); // Show corresponding slide
+            });
+        });
+    </script>
+</body>
+
+</html>
