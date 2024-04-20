@@ -809,6 +809,7 @@ nav .fas {
     .services__list {
         display: flex;
         flex-direction: column;
+        width: auto;
         margin: 10px;
     }
 
@@ -827,7 +828,7 @@ nav .fas {
 
     .project__list-column{
         margin-left: 0;
-        min-width: 350px;
+        min-width: fit-content;
         
     }
 
