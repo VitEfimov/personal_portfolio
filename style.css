@@ -65,7 +65,7 @@ body {
 .navbar__menu-item a {
     color: var(--font-color);
     text-decoration: none;
-    font-size: 25px;
+    font-size: calc(7px + 1vmin);
     position: relative;
 }
 
@@ -124,11 +124,11 @@ body {
 }
 
 .header__subtitle {
-    font-size: 25px;
+    font-size: calc(8px + 1vmin);
 }
 
 .header__title {
-    font-size: 55px;
+    font-size: calc(9px + 1vmin);
 }
 
 .header__name {
@@ -211,18 +211,18 @@ body {
 
 .about__content__col2 {
     flex-basis: 60%;
-    font-size: 35px;
+    font-size: calc(8px + 1vmin);
 }
 
 .sub__title {
-    font-size: 55px;
+    font-size: calc(12px + 1vmin);
     font-weight: 600;
     color: var(--font-color);
     user-select: none;
 }
 
 .about__description {
-    font-size: 30px;
+    font-size: calc(10px + 1vmin);
 }
 
 .about__links {
@@ -233,7 +233,7 @@ body {
 
 .about__link {
     margin-right: 100px;
-    font-size: 45px;
+    font-size: calc(11px + 1vmin);
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -261,22 +261,22 @@ body {
 .about__item {
     list-style: none;
     margin: 10px 0;
-    font-size: 35px;
+    font-size: calc(10px + 1vmin);
 }
 
 .about__item-title {
     color: var(--font-color);
-    font-size: 25px;
+    font-size: calc(8px + 1vmin);
 
 }
 
 .about__item-content {
-    font-size: 30px;
+    font-size: calc(9px + 1vmin);
     margin-top: 10px;
 }
 
 .about__item-subcontent {
-    font-size: 18px;
+    font-size: calc(7px + 1vmin);
     margin: 15px;
     list-style-type: none;
 }
@@ -312,24 +312,24 @@ a {
     max-width: max-content;
     opacity: 0.9;
     padding: 35px;
-    font-size: 25px;
+    font-size: calc(7px + 1vmin);
     border-radius: 10px;
     transition: background 0.5s, transform 0.2s;
 }
 
 .services__list div i {
-    font-size: 35px;
+    font-size: calc(10px + 1vmin);
     margin-left: 90%;
 }
 
 .services__list div h2 {
-    font-size: 35px;
+    font-size: calc(10px + 1vmin);
 }
 
 .services__list div a {
     text-decoration: none;
     color: var(--teal);
-    font-size: 1rem;
+    font-size: calc(10px + 1vmin);
     margin-top: 10px;
     display: inline-block;
     cursor: pointer;
@@ -373,10 +373,10 @@ a {
     width: 75dvh;
     height: 50dvh;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: calc(9px + 1vmin);
 
     & h2 {
-        font-size: 35px;
+        font-size: calc(10px + 1vmin);
     }
 }
 
@@ -384,7 +384,7 @@ a {
 .close {
     color: var(--grey-font);
     float: right;
-    font-size: 35px;
+    font-size: calc(10px + 1vmin);
     font-weight: bold;
 }
 
@@ -510,7 +510,7 @@ a {
     flex-direction: column;
     padding: 0 5px;
     text-align: center;
-    font-size: 1rem;
+    font-size: calc(9px + 1vmin);
     transition: height 1s;
 
     & h3 {
@@ -520,7 +520,7 @@ a {
 
     & a {
         font-weight: 500;
-        font-size: 5svh;
+        font-size: calc(8px + 1vmin);
         margin-top: 10px;
         color: var(--teal);
         text-decoration: none;
@@ -548,7 +548,7 @@ h2 {
     text-align: center;
     text-decoration: none;
     color: var(--teal);
-    font-size: 6svh;
+    font-size: calc(9px + 1vmin);
     font-weight: 700;
     transition: 0.3s;
     padding: 0.7svh;
@@ -625,11 +625,11 @@ h2 {
 
     & p {
         margin-top: 15px;
-        font-size: 5svh;
+        font-size: calc(7px + 1vmin);
 
         & i {
             color: var(--teal);
-            font-size: 6svh;
+            font-size: calc(8px + 1vmin);
         }
     }
 }
@@ -653,7 +653,7 @@ form textarea {
     margin: 5px 25px;
     border-radius: 5px;
     color: var(--font-color);
-    font-size: 5svh;
+    font-size: calc(7px + 1vmin);
     resize: none;
 }
 
@@ -665,7 +665,7 @@ form .btn_cv {
 
 .social_icons {
     margin: 15px 0;
-    font-size: 8svh;
+    font-size: calc(9px + 1vmin);
 
     & a {
         text-decoration: none;
@@ -737,7 +737,7 @@ nav .fas {
 
     nav .fas {
         display: block;
-        font-size: 25px;
+        font-size: calc(8px + 1vmin);
         margin: 25px;
     }
 
@@ -790,19 +790,20 @@ nav .fas {
     .about__links {
         flex-direction: column;
         & p {
-            font-size: 35px;
+            font-size: calc(10px + 1vmin);
         };
         margin: 10px;
     }
 
 
     .about__content__col1 img {
-        max-width: 450px;
+        max-width: 50%;
     }
 
     .about__content__col1,
     .about-row__col2 {
         flex-basis: 100%;
+        font-size: calc(7px + 1vmin);
     }
 
     .services__list {
@@ -821,7 +822,7 @@ nav .fas {
     }
 
     .copyright {
-        font-size: 20px;
+        font-size: calc(7px + 1vmin);
     }
 
     .project__list-column{
@@ -834,7 +835,7 @@ nav .fas {
 
 #resMsg {
     color: var(--green-background);
-    font-size: 25px;
+    font-size: calc(7px + 1vmin);
     text-align: center;
     font-weight: 500;
     margin-top: 0px;
