@@ -708,6 +708,10 @@ nav .fas {
     .about__content {
         display: flex;
         flex-direction: column;
+        & img{
+            width: 55%;
+        }
+        
     }
 
     .header-container {
@@ -730,9 +734,6 @@ nav .fas {
         margin-top: 30px;
     }
 
-    .header-container {}
-
-    .header-container h1 {}
 
     nav .fas {
         display: block;
@@ -751,7 +752,7 @@ nav .fas {
         margin-top: 300px;
     }
     .container {
-        width: 90vw;
+        width: 100%;
     }
 
     .container nav {
