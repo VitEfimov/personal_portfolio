@@ -54,6 +54,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     user-select: none;
+/* margin-left: 50%; */
 }
 
 .navbar__menu-item {
@@ -65,7 +66,7 @@ body {
 .navbar__menu-item a {
     color: var(--font-color);
     text-decoration: none;
-    font-size: calc(7px + 1vmin);
+    font-size: calc(10px + 1vmin);
     position: relative;
 }
 
@@ -124,11 +125,11 @@ body {
 }
 
 .header__subtitle {
-    font-size: calc(8px + 1vmin);
+    font-size: calc(20px + 1vmin);
 }
 
 .header__title {
-    font-size: calc(9px + 1vmin);
+    font-size: calc(35px + 1vmin);
 }
 
 .header__name {
@@ -211,18 +212,18 @@ body {
 
 .about__content__col2 {
     flex-basis: 60%;
-    font-size: calc(8px + 1vmin);
+    font-size: calc(15px + 1vmin);
 }
 
 .sub__title {
-    font-size: calc(12px + 1vmin);
+    font-size: calc(35px + 1vmin);
     font-weight: 600;
     color: var(--font-color);
     user-select: none;
 }
 
 .about__description {
-    font-size: calc(10px + 1vmin);
+    font-size: calc(15px + 1vmin);
 }
 
 .about__links {
@@ -233,7 +234,7 @@ body {
 
 .about__link {
     margin-right: 100px;
-    font-size: calc(11px + 1vmin);
+    font-size: calc(20px + 1vmin);
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -261,22 +262,22 @@ body {
 .about__item {
     list-style: none;
     margin: 10px 0;
-    font-size: calc(10px + 1vmin);
+    font-size: calc(18px + 1vmin);
 }
 
 .about__item-title {
     color: var(--font-color);
-    font-size: calc(8px + 1vmin);
+    font-size: calc(18px + 1vmin);
 
 }
 
 .about__item-content {
-    font-size: calc(9px + 1vmin);
+    font-size: calc(12px + 1vmin);
     margin-top: 10px;
 }
 
 .about__item-subcontent {
-    font-size: calc(7px + 1vmin);
+    font-size: calc(12px + 1vmin);
     margin: 15px;
     list-style-type: none;
 }
@@ -312,24 +313,24 @@ a {
     max-width: max-content;
     opacity: 0.9;
     padding: 35px;
-    font-size: calc(7px + 1vmin);
+    font-size: calc(12px + 1vmin);
     border-radius: 10px;
     transition: background 0.5s, transform 0.2s;
 }
 
 .services__list div i {
-    font-size: calc(10px + 1vmin);
+    font-size: calc(18px + 1vmin);
     margin-left: 90%;
 }
 
 .services__list div h2 {
-    font-size: calc(10px + 1vmin);
+    font-size: calc(25px + 1vmin);
 }
 
 .services__list div a {
     text-decoration: none;
     color: var(--teal);
-    font-size: calc(10px + 1vmin);
+    font-size: calc(12px + 1vmin);
     margin-top: 10px;
     display: inline-block;
     cursor: pointer;
@@ -373,10 +374,10 @@ a {
     width: 75dvh;
     height: 50dvh;
     border-radius: 10px;
-    font-size: calc(9px + 1vmin);
+    font-size: calc(18px + 1vmin);
 
     & h2 {
-        font-size: calc(10px + 1vmin);
+        font-size: calc(25px + 1vmin);
     }
 }
 
@@ -384,7 +385,7 @@ a {
 .close {
     color: var(--grey-font);
     float: right;
-    font-size: calc(10px + 1vmin);
+    font-size: calc(15px + 1vmin);
     font-weight: bold;
 }
 
@@ -511,7 +512,7 @@ a {
     padding: 0 5px;
     text-align: center;
     font-size: calc(9px + 1vmin);
-    transition: height 1s;
+    transition: height 0.5s;
 
     & h3 {
         font-weight: 500;
@@ -525,10 +526,10 @@ a {
         color: var(--teal);
         text-decoration: none;
         background: var(--font-color);
-        width: 10dvh;
-        height: 10dvh;
+        width: 5dvh;
+        height: 5dvh;
         text-align: center;
-        border-radius: 50%;
+        border-radius: 82%;
         align-items: center;
         display: flex;
         justify-content: center;
