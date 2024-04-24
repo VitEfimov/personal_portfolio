@@ -303,7 +303,7 @@
                         <div class="description">
                             Project made for personal using with store data in the local storage with redux. Including pomodoro, weather information, and more...
                         </div>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://test-manager-redux.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="project hidden">
@@ -444,60 +444,6 @@ document.addEventListener('DOMContentLoaded', function () {
     seeMoreBtn.addEventListener('click', openProject);
 });
 
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     const seeMoreBtn = document.querySelector('.see-more');
-//     const hiddenProjects = document.querySelectorAll('.project__list .hidden');
-//     const projectList = document.querySelector('.project__list');
-// // seeMoreBtn.addEventListener('click', () => {
-// //   seeMoreBtn.classList.add('fade-in');
-// // })
-
-// // seeMoreBtn.addEventListener('transitionend', () => {
-// //   seeMoreBtn.classList.remove('fade-in');
-// // })
-
-// // const handleSeeMoreClick = () => {
-// //     const seeMoreBtn = document.querySelector('.see-more .btn');
-// //     seeMoreBtn.classList.add('clicked'); // Add 'clicked' class
-// //     setTimeout(() => {
-// //         seeMoreBtn.classList.remove('clicked'); // Remove 'clicked' class after 0.3s
-// //     }, 300);
-// //     // Other actions you want to perform on see more click
-// // };
-
-//     function openProject() {
-//         if (projectList.classList.contains('project__list')) {
-//             hiddenProjects.forEach(project => {
-//                 project.classList.remove('hidden');
-//             });
-//             projectList.classList.remove('project__list');
-//             projectList.classList.add('project__list-column');
-//             seeMoreBtn.textContent = "See less";
-//             seeMoreBtn.classList.add('clicked'); // Add 'clicked' class
-//     setTimeout(() => {
-//         seeMoreBtn.classList.remove('clicked'); // Remove 'clicked' class after 0.3s
-//     }, 3000);
-//         } else {
-//             hiddenProjects.forEach(project => {
-//                 project.classList.add('hidden');
-//             });
-//             projectList.classList.remove('project__list-column');
-//             projectList.classList.add('project__list');
-//             seeMoreBtn.textContent = "See more";
-//             seeMoreBtn.classList.add('clicked'); // Add 'clicked' class
-//     setTimeout(() => {
-//         seeMoreBtn.classList.remove('clicked'); // Remove 'clicked' class after 0.3s
-//     }, 3000);
-//         }
-//         // seeMoreBtn.scrollIntoView({ behavior: 'smooth', block: 'end' });
-//         const offset = hiddenProjects.length * (20); // Calculate the offset based on the height of each project and gap
-//         seeMoreBtn.style.top = offset + 'px';
-//     }
-
-//     seeMoreBtn.addEventListener('click', openProject);
-// });
 
 
     </script>
