@@ -289,6 +289,19 @@ body {
 .about__content-tab.active_tab {
     display: block;
 }
+.about__item-certificate{
+    width: 300px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.about__item.collapsed .about__item-certificate {
+    /* display: none; */
+    width: 100%;
+}
+
+
 
 /* services */
 
@@ -374,6 +387,7 @@ a {
     width: 75dvh;
     height: 50dvh;
     border-radius: 10px;
+    
     font-size: calc(18px + 1vmin);
 
     & h2 {
@@ -704,7 +718,7 @@ nav .fas {
     display: none;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 600px) {
 
     .about__content {
         display: flex;
@@ -722,17 +736,21 @@ nav .fas {
         size: 200px;
     }
 
+    .modal{
+        padding-top: 150px;
+    }
     .modal-content {
 
-        width: 55dvh;
-        height: max-content;
+        width: 45dvh;
+        height: min-content;
 
     }
 
     .banner {
-        width: 100%;
-        height: 350px;
+        width: 65vw;
+        height: 250px;
         margin-top: 30px;
+        margin-left: 0;
     }
 
 
@@ -759,6 +777,9 @@ nav .fas {
     .container nav {
         position: fixed;
     }
+    .navbar i {
+        font-size: calc(25px + 1vmin);
+    }
 
     .navbar__menu {
         background-color: var(--grey-background);
@@ -774,6 +795,13 @@ nav .fas {
     .navbar__menu-item {
         display: block;
         margin: 25px;
+        /* font-size: calc(35px + 1vmin); */
+    }
+    .navbar__menu-item a {
+        display: block;
+        /* margin: 25px; */
+        margin-top: 50px;
+        font-size: calc(25px + 1vmin);
     }
 
     .navbar__menu .fas {
@@ -786,25 +814,37 @@ nav .fas {
         top: 15px;
         cursor: pointer;
         position: sticky;
+        /* font-size: 35px; */
     }
 
     .about__links {
         flex-direction: column;
-        & p {
-            font-size: calc(10px + 1vmin);
-        };
         margin: 10px;
+        & p {
+            font-size: calc(12px + 1vmin);
+        };
+        
     }
-
-
+.about__link, .active_link{
+    margin: 5px;
+}
+/* #myModal{
+    width: 100vw;
+    min-width: 200px;
+    padding-top: 100px;
+    font-size: 15px;
+} */
     .about__content__col1 img {
-        max-width: 50%;
+        max-width: 75%;
+
     }
 
     .about__content__col1,
     .about-row__col2 {
         flex-basis: 100%;
         font-size: calc(7px + 1vmin);
+
+
     }
 
     .services__list {
