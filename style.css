@@ -186,6 +186,7 @@ body {
 /* about */
 
 #about {
+    margin-top: 15px;
     padding: 80px 0;
     color: var(--grey-font);
 }
@@ -195,6 +196,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: wrap;
+    gap: 20px;
 }
 
 .about__content__col1 {
@@ -208,6 +210,7 @@ body {
     width: 100%;
     border-radius: 10px;
     height: min-content;
+    margin-bottom: 15px;
 }
 
 .about__content__col2 {
@@ -610,15 +613,7 @@ h2 {
         opacity: 1;
     }
 }
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
 
-    to {
-        opacity: 1;
-    }
-}
 .fade-in {
     opacity: 1;
     transition: opacity 0.5s ease;
@@ -846,6 +841,14 @@ nav .fas {
 
 
     }
+
+    /* .about__item-certificate {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+justify-content: center;}
+
+    } */
 
     .services__list {
         display: flex;
