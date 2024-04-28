@@ -14,7 +14,7 @@
 
     <!-- navigation menu -->
     <nav class="navbar">
-        <img src="#" class="navbar__logo">
+        <img src="./assets/images/logo-vit.png" class="navbar__logo">
         <ul class="navbar__menu" id="sidemenu">
             <li class="navbar__menu-item"><a href="#header" onclick="closeMenu()">Home</a></li>
             <li class="navbar__menu-item"><a href="#about" onclick="closeMenu()">About</a></li>
@@ -42,15 +42,15 @@
 
                     <!-- banner -->
                     <div class="banner">
-                        <div class="banner-conteiner">
-                            <video class="banner-conteiner__slide" controls autoplay muted loop>
+                        <div class="banner-container">
+                            <!-- <video class="banner-container__slide" controls autoplay muted loop>
                                 <source src="./assets/video/task-manager-video.mp4">
                             </video>
-                            <video class="banner-conteiner__slide" controls autoplay muted loop>
+                            <video class="banner-container__slide" controls autoplay muted loop>
                                 <source src="./assets/video/food-order-app.mp4">
-                            </video>
-                            <!-- <img class="banner-conteiner__slide" src="./assets/images/FoodOrderApp.jpg" alt="">
-                            <img class="banner-conteiner__slide" src="./assets/images/ecommerceApp.jpg" alt=""> -->
+                            </video> -->
+                            <img class="banner-container__slide" src="./assets/gifs/task-manager-gif.gif" alt="">
+                            <img class="banner-container__slide" src="./assets/images/ecommerceApp.jpg" alt="">
 
                         </div>
 
@@ -329,6 +329,19 @@
                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div> -->
+
+                <div class="project">
+                    <img src="./assets/images/task_manager.png" alt="taskManager">
+                    <div class="layer">
+                        <h3>Task Manager</h3>
+                        <div class="description">
+                            Project made for personal use with store data in the local storage with redux. Including
+                            pomodoro, weather information, and more...
+                        </div>
+                        <a href="https://test-manager-redux.vercel.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
                 <div class="project">
                     <img src="./assets/images/FoodOrderApp.jpg" alt="FoodOrderApp">
                     <div class="layer">
@@ -337,19 +350,7 @@
                             This project involves accessing the MongoDB database for Food Order App from the backend
                             server using ExpressJS and mongoose package as well as performing unit testing of the APIs.
                         </div>
-                        <a href="https://github.com/VitEfimov/FullFoodOrderApp"><i
-                                class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="./assets/images/task_manager.png" alt="taskManager">
-                    <div class="layer">
-                        <h3>Task Manager</h3>
-                        <div class="description">
-                            Project made for personal using with store data in the local storage with redux. Including
-                            pomodoro, weather information, and more...
-                        </div>
-                        <a href="https://test-manager-redux.vercel.app/" target="_blank"><i
+                        <a href="https://github.com/VitEfimov/FullFoodOrderApp" target="_blank"><i
                                 class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -362,7 +363,7 @@
                         <div class="description">
                             Test project for cucumber framework.
                         </div>
-                        <a href="https://github.com/VitEfimov/CucumberTestProject"><i
+                        <a href="https://github.com/VitEfimov/CucumberTestProject" target="_blank"><i
                                 class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -373,7 +374,7 @@
                         <div class="description">
                             Test progect for cypress framework.
                         </div>
-                        <a href="https://github.com/VitEfimov/CypressAutomation/tree/main/cypress"><i
+                        <a href="https://github.com/VitEfimov/CypressAutomation/tree/main/cypress" target="_blank"><i
                                 class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -391,13 +392,13 @@
             <div class="container">
                 <div class="row">
                     <div class="contact_left">
-                        <h1 class="sub__title">Contact</h1>
+                        <h1 class="sub__title">Contact<br/> information</h1>
                         <p><i class="fa-solid fa-paper-plane"></i> vitvalef@gmail.com</p>
                         <p><i class="fa-solid fa-phone"></i> 813-465-4298</p>
                         <div class="social_icons">
-                            <a href="https://linkedin.com/in/vit-e-b56118276"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://linkedin.com/in/vitalii-e-b56118276" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                             <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
-                            <a href="https://github.com/VitEfimov"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/VitEfimov" target="_blank"><i class="fa-brands fa-github"></i></a>
                         </div>
                         <a href="assets/files/Vit_Efimov_Resume.pdf" download class="btn btn_cv">Download CV</a>
                     </div>
@@ -421,6 +422,34 @@
         <div class="copyright">Copyright © Vit</div>
     </div>
 
+    <!-- video -->
+
+
+    <script>
+//         document.addEventListener('DOMContentLoaded', function () {
+//     const videos = document.querySelectorAll('.banner-container__slide');
+// console.log('videos',videos);
+//     videos.forEach(video => {
+//         video.addEventListener('click', function () {
+//             if (video.requestFullscreen) {
+//                 video.requestFullscreen();
+//             } else if (video.mozRequestFullScreen) { /* Firefox */
+//                 video.mozRequestFullScreen();
+//             } else if (video.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+//                 video.webkitRequestFullscreen();
+//             } else if (video.msRequestFullscreen) { /* IE/Edge */
+//                 video.msRequestFullscreen();
+//             }
+//             // Enable rotation
+//             if (video.style.animationName !== 'rotate') {
+//                 video.style.animation = 'rotate 10s linear infinite';
+//             } else {
+//                 video.style.animation = '';
+//             }
+//         });
+//     });
+// });
+    </script>
 
 
 
