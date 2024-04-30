@@ -732,6 +732,8 @@ nav .fas {
             transform: rotate(180deg);
         }
     }
+    .parallax{
+background: none;    }
     .banner {
         flex-basis: 80%;
         display: flex;
