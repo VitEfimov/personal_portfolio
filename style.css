@@ -12,6 +12,7 @@
     --grey-font: #ababab;
     --font-color: #fff;
     --green-background: #366501;
+    scrollbar-gutter:stable;
 }
 
 html {
