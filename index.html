@@ -542,7 +542,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyright">Copyright © Vit</div>
+        <div class="copyright">Copyright 2025 © Vit</div>
     </div>
 
     <!-- video -->
@@ -734,7 +734,7 @@
     </script>
 
     <!-- script google sheet -->
-    <script>
+    <!-- <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbynna31z8cZmJzdRDaLDND30B1_UnPb-DY4U-IIsnpGaN-4CTdKcoX04-Z_kZ7YaLK2qg/exec'
         const form = document.forms['submit-to-google-sheet'];
 
@@ -752,7 +752,54 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
-    </script>
+    </script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbynna31z8cZmJzdRDaLDND30B1_UnPb-DY4U-IIsnpGaN-4CTdKcoX04-Z_kZ7YaLK2qg/exec'
+            // <!-- const scriptURL =  'https://script.google.com/macros/s/AKfycbwKUXL_i1QqhPCi3YNg_AYrsX3daoZih1JKsjxztAfA/dev' -->
+            const form = document.forms['submit-to-google-sheet'];
+            const msg = document.getElementById('resMsg')
+        
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully"
+                        setTimeout(() => msg.innerHTML = "", 5000);
+                        form.reset();
+                    })
+                    .catch(error => {
+                        msg.innerHTML = "Error occurred";
+                        console.error('Error!', error.message)
+                    });
+            });
+        });
+        </script>
+
+        <script>
+            // const scriptURL = 'https://script.google.com/home/projects/1loq_yJVn4dqEvhFJUD1_4vwXmL8uumsh2XER-bLanmgEzQ3A_fQ_gdSN/edit'; // Replace with your deployed web app URL
+            // const form = document.forms['submit-to-google-sheet'];
+            // const msg = document.getElementById('resMsg');
+        
+            // form.addEventListener('submit', e => {
+            // e.preventDefault();
+            // fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            //     .then(response => response.json())
+            //     .then(data => {
+            //     if (data.result === 'success') {
+            //         msg.innerHTML = "Message sent successfully!";
+            //         setTimeout(() => msg.innerHTML = "", 5000);
+            //         form.reset();
+            //     } else {
+            //         msg.innerHTML = "Error: " + JSON.stringify(data.error);
+            //     }
+            //     })
+            //     .catch(error => {
+            //     console.error('Error!', error.message);
+            //     msg.innerHTML = "Error occurred while submitting the form.";
+            //     });
+            // });
+        </script>
 
 </body>
 
