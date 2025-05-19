@@ -433,7 +433,7 @@ a {
 
 .project__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     /* grid-template-rows: 1fr; */
     grid-gap: 20px;
     margin-top: 20px;
@@ -442,6 +442,8 @@ a {
     overflow: hidden;
     object-fit: cover;
     min-height: 0;
+    justify-items: center;
+
 }
 
 .project__list .hidden {
@@ -483,6 +485,8 @@ a {
     position: relative;
     overflow: hidden;
     width: fit-content;
+    /* width: 100%; */
+    max-width: 350px;
     opacity: 0; /* Initially set opacity to 0 */
     animation: fadeIn 3s ease forwards; /* Define the fadeIn animation */
 }
@@ -520,6 +524,7 @@ a {
 .project img {
     width: 100%;
     height: 100%;
+    display: block;
 }
 
 .layer {
