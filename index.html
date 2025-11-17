@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('assets', filename='icons8-portfolio-32.png') }}" type="image/x-icon" />
+    <link rel="icon" href="./assets/icons8-code-32.png" type="image/png">
+    <link rel="icon" href="{{ url_for('assets', filename='icons8-code-32.png') }}" type="image/png" />
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/02b9f7c904.js" crossorigin="anonymous"></script>
@@ -33,10 +37,12 @@
             <div class="container">
                 <div class="header-container">
                     <div id="header-writer" onload="typeWriter()"></div>
-                    <!-- <p id="header-writer" onload="typeWriter()" ></p> -->
+                    <p id="header-writer" onload="typeWriter()"></p>
                     <div class="header">
                         <h1 class="header__title">Hi, I'm <span class="header__name">Vit</span> Efimov</h1>
-                        <p class="header__subtitle">QA Test Automation Engineer<br> and Full-Stack Web Developer</p>
+                        <icon src="./assets/icons8-code-32.png" alt="">
+
+                            <p class="header__subtitle">QA Test Automation Engineer<br> and Full-Stack Web Developer</p>
                     </div>
 
 
@@ -44,7 +50,7 @@
                     <div class="banner">
                         <div class="banner-container">
                             <!-- <video class="banner-container__slide" controls autoplay muted loop onclick='window.open("https://test-manager-redux.vercel.app/", "_blank")' -->
-                                <!-- <video class="banner-container__slide" controls autoplay muted loop ></video>">
+                            <!-- <video class="banner-container__slide" controls autoplay muted loop ></video>">
                                 <source src="./assets/video/task-manager-video.mp4">
                             </video> -->
                             <!-- <video class="banner-container__slide" controls autoplay muted loop>
@@ -183,129 +189,138 @@
                             </li>
                         </ul>
                     </div> -->
-                    <div class="about__content__col2">
-                        <h1 class="sub__title">About Me</h1>
-                        <p class="about__description">
-                            QA Automation Engineer and aspiring Full-Stack Developer skilled in Python, Java, JavaScript, and the MERN stack.
-                            Experienced in test automation (Selenium, Cucumber, Cypress), backend development, and Agile workflows.
-                            Passionate about building scalable cloud applications and delivering high-quality software solutions.
-                        </p>
-                        <div class="about__links">
-                            <p class="about__link active_link" onclick="openTab('skills')">Skills</p>
-                            <p class="about__link" onclick="openTab('experiance')">Experience</p>
-                            <p class="about__link" onclick="openTab('education')">Education</p>
-                            <p class="about__link" onclick="openTab('certificates')">Certificates</p>
-                        </div>
-                    
-                        <!-- Skills Tab -->
-                        <div class="about__content-tab active_tab" id="skills">
-                            <ul class="about__list">
-                                <li class="about__item"><span class="about__item-title">Programming</span><br>
-                                    <p class="about__item-content">Java, JavaScript, Python</p>
-                                </li>
-                                <li class="about__item"><span class="about__item-title">Testing & Automation</span><br>
-                                    <p class="about__item-content">Selenium, Cypress, Cucumber, JUnit, TestNG, PyTest, Postman</p>
-                                </li>
-                                <li class="about__item"><span class="about__item-title">Web Development</span><br>
-                                    <p class="about__item-content">MERN Stack, RESTful APIs, Node.js, Express.js, React, Bootstrap</p>
-                                </li>
-                                <li class="about__item"><span class="about__item-title">Databases</span><br>
-                                    <p class="about__item-content">MongoDB, MySQL, Oracle, PostgreSQL</p>
-                                </li>
-                                <li class="about__item"><span class="about__item-title">Tools</span><br>
-                                    <p class="about__item-content">Git, Jenkins, Lightspeed, Sonar, IntelliJ, VSCode, Bitbucket</p>
-                                </li>
-                                <li class="about__item"><span class="about__item-title">Methodologies</span><br>
-                                    <p class="about__item-content">Agile (Scrum, Kanban), Waterfall</p>
-                                </li>
-                            </ul>
-                        </div>
-                    
-                        <!-- Experience Tab -->
-                        <div class="about__content-tab" id="experiance">
-                            <ul class="about__list">
-                                <li class="about__item">
-                                    <span class="about__item-title">Nov 2024 – Present</span><br>
-                                    <p class="about__item-content">Revature LLC (Contract at CitiGroup)</p>
-                                    <ul class="about__item-subcontent">
-                                        <li>Supported CitiGroup’s Python-based EUC risk analytics initiative.</li>
-                                        <li>Built a file comparison utility for internal data validation.</li>
-                                        <li>Debugged Python code across multiple environments.</li>
-                                        <li>Performed manual and automated testing.</li>
-                                        <li>Developed BDD test automation with Cucumber and Selenium.</li>
-                                    </ul>
-                                </li>
-                                <li class="about__item">
-                                    <span class="about__item-title">Jun 2024 – Aug 2024</span><br>
-                                    <p class="about__item-content">Revature LLC</p>
-                                    <ul class="about__item-subcontent">
-                                        <li>Built and tested RESTful APIs using Spring Boot and Java.</li>
-                                        <li>Practiced TDD/BDD with JUnit, Mockito, and Cucumber.</li>
-                                        <li>Used Maven for builds and Git for version control.</li>
-                                        <li>Gained hands-on experience with Docker, Kubernetes, and SQL.</li>
-                                    </ul>
-                                 </li>
-                                <li class="about__item">
-                                    <span class="about__item-title">July 2023 – Nov 2024</span><br>
-                                    <p class="about__item-content">Upwork – Freelance QA</p>
-                                    <ul class="about__item-subcontent">
-                                        <li>Collaborated with clients on web/mobile QA projects.</li>
-                                        <li>Executed tests, reported bugs, and verified fixes.</li>
-                                        <li>Conducted functional, usability, and cross-platform testing.</li>
-                                    </ul>
-                                </li>
-                                <li class="about__item">
-                                    <span class="about__item-title">2022 – 2023</span><br>
-                                    <p class="about__item-content">Tumbcloud (Project)</p>
-                                    <ul class="about__item-subcontent">
-                                        <li>Implemented BDD with Cucumber and Gherkin.</li>
-                                        <li>Integrated Selenium tests with Jenkins and AWS pipelines.</li>
-                                        <li>Tested RESTful APIs via CRUD operations.</li>
-                                    </ul>
-                                </li>
-                                <li class="about__item">
-                                    <span class="about__item-title">2022 – 2023</span><br>
-                                    <p class="about__item-content">Locaper (Project)</p>
-                                    <ul class="about__item-subcontent">
-                                        <li>Built automation framework with Java, TestNG, and POM design.</li>
-                                        <li>Automated UI and API testing using Selenium WebDriver.</li>
-                                    </ul>
-                                </li>
-                                <li class="about__item">
-                                    <span class="about__item-title">2009 – 2015</span><br>
-                                    <p class="about__item-content">Shanghai Technologies</p>
-                                    <ul class="about__item-subcontent">
-                                        <li>Regional Director of Sales & Marketing managing 12 staff.</li>
-                                        <li>Oversaw sales forecasting, budgeting, and logistics.</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    
-                        <!-- Education Tab -->
-                        <div class="about__content-tab" id="education">
-                            <ul class="about__list">
-                                <li class="about__item">
-                                    <span class="about__item-title">McCombs School of Business, UT Austin</span><br>
-                                    <p class="about__item-content">Professional Certificate in Full Stack Software Development</p>
-                                </li>
-                                <li class="about__item">
-                                    <span class="about__item-title">Cydeo</span><br>
-                                    <p class="about__item-content">Certificate in Software Development Engineer in Test</p>
-                                </li>
-                                <li class="about__item">
-                                    <span class="about__item-title">Amur State University</span><br>
-                                    <p class="about__item-content">Diploma in Business Administration & Strategic Management</p>
-                                </li>
-                                <li class="about__item">
-                                    <span class="about__item-title">Blagoveshchensk State Pedagogical University</span><br>
-                                    <p class="about__item-content">M.S. in Mathematics & Physics, Minor in Psychology & Pedagogic</p>
-                                </li>
-                            </ul>
-                        </div>
-                    
-                        <!-- Certificates Tab -->
-                        <div class="about__content-tab" id="certificates">
+                <div class="about__content__col2">
+                    <h1 class="sub__title">About Me</h1>
+                    <p class="about__description">
+                        QA Automation Engineer and aspiring Full-Stack Developer skilled in Python, Java, JavaScript,
+                        and the MERN stack.
+                        Experienced in test automation (Selenium, Cucumber, Cypress), backend development, and Agile
+                        workflows.
+                        Passionate about building scalable cloud applications and delivering high-quality software
+                        solutions.
+                    </p>
+                    <div class="about__links">
+                        <p class="about__link active_link" onclick="openTab('skills')">Skills</p>
+                        <p class="about__link" onclick="openTab('experiance')">Experience</p>
+                        <p class="about__link" onclick="openTab('education')">Education</p>
+                        <p class="about__link" onclick="openTab('certificates')">Certificates</p>
+                    </div>
+
+                    <!-- Skills Tab -->
+                    <div class="about__content-tab active_tab" id="skills">
+                        <ul class="about__list">
+                            <li class="about__item"><span class="about__item-title">Programming</span><br>
+                                <p class="about__item-content">Java, JavaScript, Python</p>
+                            </li>
+                            <li class="about__item"><span class="about__item-title">Testing & Automation</span><br>
+                                <p class="about__item-content">Selenium, Cypress, Cucumber, JUnit, TestNG, PyTest,
+                                    Postman</p>
+                            </li>
+                            <li class="about__item"><span class="about__item-title">Web Development</span><br>
+                                <p class="about__item-content">MERN Stack, RESTful APIs, Node.js, Express.js, React,
+                                    Bootstrap</p>
+                            </li>
+                            <li class="about__item"><span class="about__item-title">Databases</span><br>
+                                <p class="about__item-content">MongoDB, MySQL, Oracle, PostgreSQL</p>
+                            </li>
+                            <li class="about__item"><span class="about__item-title">Tools</span><br>
+                                <p class="about__item-content">Git, Jenkins, Lightspeed, Sonar, IntelliJ, VSCode,
+                                    Bitbucket</p>
+                            </li>
+                            <li class="about__item"><span class="about__item-title">Methodologies</span><br>
+                                <p class="about__item-content">Agile (Scrum, Kanban), Waterfall</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Tab -->
+                    <div class="about__content-tab" id="experiance">
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <span class="about__item-title">Nov 2024 – Present</span><br>
+                                <p class="about__item-content">Revature LLC (Contract at CitiGroup)</p>
+                                <ul class="about__item-subcontent">
+                                    <li>Supported CitiGroup’s Python-based EUC risk analytics initiative.</li>
+                                    <li>Built a file comparison utility for internal data validation.</li>
+                                    <li>Debugged Python code across multiple environments.</li>
+                                    <li>Performed manual and automated testing.</li>
+                                    <li>Developed BDD test automation with Cucumber and Selenium.</li>
+                                </ul>
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">Jun 2024 – Aug 2024</span><br>
+                                <p class="about__item-content">Revature LLC</p>
+                                <ul class="about__item-subcontent">
+                                    <li>Built and tested RESTful APIs using Spring Boot and Java.</li>
+                                    <li>Practiced TDD/BDD with JUnit, Mockito, and Cucumber.</li>
+                                    <li>Used Maven for builds and Git for version control.</li>
+                                    <li>Gained hands-on experience with Docker, Kubernetes, and SQL.</li>
+                                </ul>
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">July 2023 – Nov 2024</span><br>
+                                <p class="about__item-content">Upwork – Freelance QA</p>
+                                <ul class="about__item-subcontent">
+                                    <li>Collaborated with clients on web/mobile QA projects.</li>
+                                    <li>Executed tests, reported bugs, and verified fixes.</li>
+                                    <li>Conducted functional, usability, and cross-platform testing.</li>
+                                </ul>
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">2022 – 2023</span><br>
+                                <p class="about__item-content">Tumbcloud (Project)</p>
+                                <ul class="about__item-subcontent">
+                                    <li>Implemented BDD with Cucumber and Gherkin.</li>
+                                    <li>Integrated Selenium tests with Jenkins and AWS pipelines.</li>
+                                    <li>Tested RESTful APIs via CRUD operations.</li>
+                                </ul>
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">2022 – 2023</span><br>
+                                <p class="about__item-content">Locaper (Project)</p>
+                                <ul class="about__item-subcontent">
+                                    <li>Built automation framework with Java, TestNG, and POM design.</li>
+                                    <li>Automated UI and API testing using Selenium WebDriver.</li>
+                                </ul>
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">2009 – 2015</span><br>
+                                <p class="about__item-content">Shanghai Technologies</p>
+                                <ul class="about__item-subcontent">
+                                    <li>Regional Director of Sales & Marketing managing 12 staff.</li>
+                                    <li>Oversaw sales forecasting, budgeting, and logistics.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Tab -->
+                    <div class="about__content-tab" id="education">
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <span class="about__item-title">McCombs School of Business, UT Austin</span><br>
+                                <p class="about__item-content">Professional Certificate in Full Stack Software
+                                    Development</p>
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">Cydeo</span><br>
+                                <p class="about__item-content">Certificate in Software Development Engineer in Test</p>
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">Amur State University</span><br>
+                                <p class="about__item-content">Diploma in Business Administration & Strategic Management
+                                </p>
+                            </li>
+                            <li class="about__item">
+                                <span class="about__item-title">Blagoveshchensk State Pedagogical University</span><br>
+                                <p class="about__item-content">M.S. in Mathematics & Physics, Minor in Psychology &
+                                    Pedagogic</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Certificates Tab -->
+                    <!-- <div class="about__content-tab" id="certificates">
                             <ul class="about__list">
                                 <li class="about__item">
                                     <span class="about__item-title">ISTQB CTFL Certification</span><br>
@@ -313,8 +328,8 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    
+                    </div> -->
+
                     <div class="about__content-tab" id="education">
                         <ul class="about__list">
                             <li class="about__item">
@@ -341,7 +356,8 @@
                                 <span class="about__item-title">November 2012 – June 2013</span>
                                 <br>
                                 <p class="about__item-content">Amur State University.<br>
-                                <p class="about__item-subcontent">Professional Retraining Diploma in Business Administration & Strategic
+                                <p class="about__item-subcontent">Professional Retraining Diploma in Business
+                                    Administration & Strategic
                                     Management.</p>
                                 </p>
                             </li>
@@ -452,11 +468,12 @@
                     <div class="layer">
                         <h3>File Comparator</h3>
                         <div class="description">
-                            This project is a Python-based application that compares .csv and .xlsx files 
+                            This project is a Python-based application that compares .csv and .xlsx files
                             from two directories(re-run after 5 minutes(render.com)).
                         </div>
                         <!-- <a href="https://github.com/VitEfimov/File_comparator" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a> -->
-                         <a href="https://file-comparator-render.onrender.com" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://file-comparator-render.onrender.com" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
 
@@ -482,8 +499,8 @@
                         </div>
                         <!-- <a href="https://github.com/VitEfimov/FullFoodOrderApp" target="_blank"><i
                                 class="fa-solid fa-up-right-from-square"></i></a> -->
-                                <a href="https://eportfolio.mygreatlearning.com/vitalii-efimov?utm_source=social&utm_medium=linkedin" target="_blank"><i
-                                    class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://eportfolio.mygreatlearning.com/vitalii-efimov?utm_source=social&utm_medium=linkedin"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <!-- <div class="project hidden"> -->
@@ -500,7 +517,7 @@
                     </div>
                 </div>
                 <!-- <div class="project hidden"> -->
-            <!-- <div class="project__list"> -->
+                <!-- <div class="project__list"> -->
                 <div class="project"> <img src="./assets/images/cypress.png" alt="cypress">
                     <div class="layer">
                         <h3>cypress</h3>
@@ -511,7 +528,7 @@
                                 class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
-            <!-- </div> -->
+                <!-- </div> -->
 
             </div>
 
@@ -526,13 +543,15 @@
             <div class="container">
                 <div class="row">
                     <div class="contact_left">
-                        <h1 class="sub__title">Contact<br/> information</h1>
+                        <h1 class="sub__title">Contact<br /> information</h1>
                         <p><i class="fa-solid fa-paper-plane"></i> vitvalef@gmail.com</p>
                         <p><i class="fa-solid fa-phone"></i> 813-465-4298</p>
                         <div class="social_icons">
-                            <a href="https://linkedin.com/in/vitalii-e-b56118276" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://linkedin.com/in/vitalii-e-b56118276" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
                             <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
-                            <a href="https://github.com/VitEfimov" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/VitEfimov" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
                         </div>
                         <a href="assets/files/Resume_Vitalii_Efimov.pdf" download class="btn btn_cv">Download CV</a>
                     </div>
@@ -560,29 +579,29 @@
 
 
     <script>
-//         document.addEventListener('DOMContentLoaded', function () {
-//     const videos = document.querySelectorAll('.banner-container__slide');
-// console.log('videos',videos);
-//     videos.forEach(video => {
-//         video.addEventListener('click', function () {
-//             if (video.requestFullscreen) {
-//                 video.requestFullscreen();
-//             } else if (video.mozRequestFullScreen) { /* Firefox */
-//                 video.mozRequestFullScreen();
-//             } else if (video.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-//                 video.webkitRequestFullscreen();
-//             } else if (video.msRequestFullscreen) { /* IE/Edge */
-//                 video.msRequestFullscreen();
-//             }
-//             // Enable rotation
-//             if (video.style.animationName !== 'rotate') {
-//                 video.style.animation = 'rotate 10s linear infinite';
-//             } else {
-//                 video.style.animation = '';
-//             }
-//         });
-//     });
-// });
+        //         document.addEventListener('DOMContentLoaded', function () {
+        //     const videos = document.querySelectorAll('.banner-container__slide');
+        // console.log('videos',videos);
+        //     videos.forEach(video => {
+        //         video.addEventListener('click', function () {
+        //             if (video.requestFullscreen) {
+        //                 video.requestFullscreen();
+        //             } else if (video.mozRequestFullScreen) { /* Firefox */
+        //                 video.mozRequestFullScreen();
+        //             } else if (video.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+        //                 video.webkitRequestFullscreen();
+        //             } else if (video.msRequestFullscreen) { /* IE/Edge */
+        //                 video.msRequestFullscreen();
+        //             }
+        //             // Enable rotation
+        //             if (video.style.animationName !== 'rotate') {
+        //                 video.style.animation = 'rotate 10s linear infinite';
+        //             } else {
+        //                 video.style.animation = '';
+        //             }
+        //         });
+        //     });
+        // });
     </script>
 
 
@@ -765,52 +784,72 @@
         })
     </script> -->
     <script>
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     const scriptURL = 'https://script.google.com/macros/s/AKfycbynna31z8cZmJzdRDaLDND30B1_UnPb-DY4U-IIsnpGaN-4CTdKcoX04-Z_kZ7YaLK2qg/exec'
+        //     // <!-- const scriptURL =  'https://script.google.com/macros/s/AKfycbwKUXL_i1QqhPCi3YNg_AYrsX3daoZih1JKsjxztAfA/dev' -->
+        //     const form = document.forms['submit-to-google-sheet'];
+        //     const msg = document.getElementById('resMsg')
+
+        //     form.addEventListener('submit', e => {
+        //         e.preventDefault()
+        //         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        //             .then(response => {
+        //                 msg.innerHTML = "Message sent successfully"
+        //                 setTimeout(() => msg.innerHTML = "", 3000);
+        //                 form.reset();
+        //             })
+        //             .catch(error => {
+        //                 msg.innerHTML = "Error occurred";
+        //                 console.error('Error!', error.message)
+        //             });
+        //     });
+        // });
+    </script>
+
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbynna31z8cZmJzdRDaLDND30B1_UnPb-DY4U-IIsnpGaN-4CTdKcoX04-Z_kZ7YaLK2qg/exec'
-            // <!-- const scriptURL =  'https://script.google.com/macros/s/AKfycbwKUXL_i1QqhPCi3YNg_AYrsX3daoZih1JKsjxztAfA/dev' -->
             const form = document.forms['submit-to-google-sheet'];
-            const msg = document.getElementById('resMsg')
-        
-            form.addEventListener('submit', e => {
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                    .then(response => {
-                        msg.innerHTML = "Message sent successfully"
-                        setTimeout(() => msg.innerHTML = "", 5000);
-                        form.reset();
-                    })
-                    .catch(error => {
-                        msg.innerHTML = "Error occurred";
-                        console.error('Error!', error.message)
+            const msg = document.getElementById('resMsg');
+
+            async function formToJson(form) {
+                const data = {};
+                new FormData(form).forEach((value, key) => data[key] = value);
+                return data;
+            }
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                msg.innerHTML = "Sending...";
+
+                try {
+                    const payload = await formToJson(form);
+                    // Optional: include secret if you set it on Vercel
+                    // payload._secret = '<SOME_SECRET>';  // DO NOT hardcode in repo
+
+                    // Use the full Vercel URL in development/testing if needed:
+                    // const res = await fetch('https://your-vercel-app.vercel.app/api/contact', {...});
+                    const res = await fetch('/api/contact', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload),
                     });
+
+                    const text = await res.text();
+                    if (res.ok) {
+                        msg.innerHTML = "Message sent successfully";
+                        form.reset();
+                    } else {
+                        msg.innerHTML = "Error: " + text;
+                    }
+                } catch (err) {
+                    console.error(err);
+                    msg.innerHTML = "Network error";
+                }
+                setTimeout(() => msg.innerHTML = "", 3000);
             });
         });
-        </script>
 
-        <script>
-            // const scriptURL = 'https://script.google.com/home/projects/1loq_yJVn4dqEvhFJUD1_4vwXmL8uumsh2XER-bLanmgEzQ3A_fQ_gdSN/edit'; // Replace with your deployed web app URL
-            // const form = document.forms['submit-to-google-sheet'];
-            // const msg = document.getElementById('resMsg');
-        
-            // form.addEventListener('submit', e => {
-            // e.preventDefault();
-            // fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            //     .then(response => response.json())
-            //     .then(data => {
-            //     if (data.result === 'success') {
-            //         msg.innerHTML = "Message sent successfully!";
-            //         setTimeout(() => msg.innerHTML = "", 5000);
-            //         form.reset();
-            //     } else {
-            //         msg.innerHTML = "Error: " + JSON.stringify(data.error);
-            //     }
-            //     })
-            //     .catch(error => {
-            //     console.error('Error!', error.message);
-            //     msg.innerHTML = "Error occurred while submitting the form.";
-            //     });
-            // });
-        </script>
+    </script>
 
 </body>
 
