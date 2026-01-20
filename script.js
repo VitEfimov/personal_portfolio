@@ -12,6 +12,18 @@ function openTab(tabName) {
     document.getElementById(tabName).classList.add("active_tab")
 }
 
+function toggleSkill(element) {
+    // Optional: Close other expanded skills to keep it clean (accordion style)
+    // const allSkills = document.querySelectorAll('.skill-category');
+    // allSkills.forEach(skill => {
+    //     if (skill !== element) {
+    //         skill.classList.remove('expanded');
+    //     }
+    // });
+    
+    element.classList.toggle('expanded');
+}
+
 // document.addEventListener('DOMContentLoaded', function () {
 //     let seeMoreBtn = document.querySelector('.see-more');
 //     let hiddenProjectList = document.querySelectorAll('.hidden');

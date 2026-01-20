@@ -98,82 +98,52 @@
                 <div class="bento-card bio-card">
                     <h3>Bio</h3>
                     <p>
-                        Passionate QA Automation Engineer and aspiring Full-Stack Developer.
-                        I specialize in building scalable cloud applications and ensuring software quality through
-                        robust automation frameworks (Selenium, Cypress, Cucumber).
-                        Skilled in Python, Java, JavaScript, and the MERN stack.
+                        QA Automation Engineer and Software Engineer with hands-on experience supporting Python-based
+                        data systems,
+                        test automation frameworks, and backend services in regulated environments. Strong background in
+                        Python, Java, JavaScript, and full-stack development (MERN),
+                        with proven ability to automate data validation, improve testing efficiency, and support
+                        analytical models.
+                        Brings a unique blend of technical expertise and over 6 years of prior experience in logistics,
+                        international trade, and operations,
+                        providing a strong foundation in process accuracy, compliance, data reconciliation, and
+                        stakeholder communication.
+                        Known for attention to detail, analytical thinking, and the ability to bridge business
+                        requirements with technical solutions.
+
                     </p>
                 </div>
 
                 <!-- Skills Card -->
-                <div class="bento-card skills-card">
+                <div class="bento-card skills-card clickable-card" onclick="openModal('details-skills')">
                     <h3>Skills</h3>
-                    <div class="skills-container">
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Selenium</span>
-                        <span class="skill-tag">Cypress</span>
-                        <span class="skill-tag">Cucumber</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Jenkins</span>
-                    </div>
+                    <i class="fa-solid fa-code"
+                        style="font-size: 3rem; color: var(--accent-color); margin: 20px 0;"></i>
+                    <p>Click to view detailed skills & technologies</p>
                 </div>
 
                 <!-- Experience Card -->
-                <div class="bento-card experience-card">
+                <div class="bento-card experience-card clickable-card" onclick="openModal('details-experience')">
                     <h3>Experience</h3>
-                    <ul class="experience-list">
-                        <li>
-                            <span class="date">Nov 2024 - Present</span>
-                            <strong>Revature LLC (CitiGroup)</strong>
-                            <p>QA Automation & Python Dev</p>
-                        </li>
-                        <li>
-                            <span class="date">Jun 2024 - Aug 2024</span>
-                            <strong>Revature LLC</strong>
-                            <p>Full Stack Java Dev</p>
-                        </li>
-                        <li>
-                            <span class="date">July 2023 - Nov 2024</span>
-                            <strong>Freelance QA</strong>
-                            <p>Web/Mobile Testing</p>
-                        </li>
-                    </ul>
+                    <i class="fa-solid fa-briefcase"
+                        style="font-size: 3rem; color: var(--accent-color); margin: 20px 0;"></i>
+                    <p>Click to view work history</p>
                 </div>
 
                 <!-- Education Card -->
-                <div class="bento-card education-card">
+                <div class="bento-card education-card clickable-card" onclick="openModal('details-education')">
                     <h3>Education</h3>
-                    <ul class="education-list">
-                        <li><strong>UT Austin</strong> - Full Stack Cert</li>
-                        <li><strong>Cydeo</strong> - SDET Cert</li>
-                        <li><strong>Amur State Univ</strong> - Business Admin</li>
-                        <li><strong>Blagoveshchensk Univ</strong> - M.S. Math/Physics</li>
-                    </ul>
+                    <i class="fa-solid fa-graduation-cap"
+                        style="font-size: 3rem; color: var(--accent-color); margin: 20px 0;"></i>
+                    <p>Click to view education details</p>
                 </div>
 
                 <!-- Certificates Card -->
-                <div class="bento-card certs-card">
+                <div class="bento-card certs-card clickable-card" onclick="openModal('details-certs')">
                     <h3>Certificates</h3>
-                    <div class="certs-container">
-                        <div class="cert-item" onclick="toggleCertificate(this)">
-                            <span>UT Austin Full Stack</span>
-                            <img class="cert-img" src="./assets/files/texas-univ-cert.png" alt="UT Austin Cert">
-                        </div>
-                        <div class="cert-item" onclick="toggleCertificate(this)">
-                            <span>ISTQB CTFL</span>
-                            <img class="cert-img" src="./assets/files/istqb-cert.png" alt="ISTQB Cert">
-                        </div>
-                        <div class="cert-item" onclick="toggleCertificate(this)">
-                            <span>Cydeo SDET</span>
-                            <img class="cert-img" src="./assets/files/cydeo-cert.png" alt="Cydeo Cert">
-                        </div>
-                    </div>
+                    <i class="fa-solid fa-certificate"
+                        style="font-size: 3rem; color: var(--accent-color); margin: 20px 0;"></i>
+                    <p>Click to view certifications</p>
                 </div>
             </div>
         </div>
@@ -243,6 +213,20 @@
         <div class="container">
             <h1 class="sub__title">Projects</h1>
             <div class="project__list">
+                <!-- https://forcust-tool-antigravity.vercel.app/# -->
+                <div class="project">
+                    <img src="./assets/images/forecust-app.png" alt="forecast">
+                    <div class="layer">
+                        <h3>Forecast Stock Market</h3>
+                        <div class="description">
+                            Python-based stock market forecasting tool using historical data to predict future
+                            trends.(re-run after 5 minutes(render.com)).
+                        </div>
+                        <!-- <a href="https://github.com/VitEfimov/File_comparator" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+                        <a href="https://forcust-tool-antigravity.vercel.app/#" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
                 <div class="project">
                     <img src="./assets/images/file_compare.PNG" alt="file_compare">
                     <div class="layer">
@@ -438,8 +422,30 @@
         }
     </script>
 
-    <!-- services script -->
+    <!-- modal script -->
     <script>
+        // Generic Modal Logic
+        function openModal(contentId) {
+            const modal = document.getElementById('myModal');
+            const modalText = document.querySelector('.modal-text');
+            const sourceContent = document.getElementById(contentId);
+
+            if (sourceContent) {
+                modalText.innerHTML = sourceContent.innerHTML;
+                modal.style.display = "block";
+
+                // Re-initialize animations or interactions if needed
+                // For example, if you want animations to play when modal opens
+            }
+        }
+
+        // Services Modal Logic (Keep existing functionality if consistent, or adapt)
+        // Note: The Services section uses 'learn-more' class. We can adapt it to reuse the openModal if we restructured it,
+        // but for now, we'll keep the existing listeners for services to avoid breaking that section,
+        // OR we can merge them. The user didn't ask to refactor Services, so let's leave Services as is 
+        // BUT we need to make sure the modal elements don't conflict. 
+        // The existing modal #myModal is used for both.
+
         document.querySelectorAll('.learn-more').forEach(item => {
             item.addEventListener('click', event => {
                 const parentDiv = event.target.parentElement;
@@ -448,10 +454,11 @@
                 const secondParagraph = parentDiv.querySelector('p.services__item-hidden').textContent;
                 const serviceName = parentDiv.querySelector('h2').textContent;
                 const modalText = document.querySelector('.modal-text');
+
                 modalText.innerHTML = `<h2>${serviceName}</h2><p>${firstParagraph} ${secondParagraph}</p>`;
+
                 const modal = document.getElementById('myModal');
                 modal.style.display = "block";
-                modal.style.color = "black";
             });
         });
 
@@ -554,6 +561,197 @@
         });
 
     </script>
+
+    <!-- Hidden Content for Modals -->
+    <div id="hidden-content" style="display: none;">
+        <!-- Skills Content -->
+        <div id="details-skills">
+            <h2 style="margin-bottom: 20px;">Skills</h2>
+            <div class="skills-container-new">
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>AI</span>
+                    </div>
+                    <div class="skill-details">Prompt Engineering</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Programming Languages</span>
+                    </div>
+                    <div class="skill-details">Java, JavaScript, Python</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Data Analysis</span>
+                    </div>
+                    <div class="skill-details">Pandas, Apache Airflow</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Manual Testing</span>
+                    </div>
+                    <div class="skill-details">Test Case Design & Execution, Defect Tracking & Reporting, Regression
+                        Testing, Usability Testing, Cross-Browser Testing, Mobile App Testing</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Test Automation</span>
+                    </div>
+                    <div class="skill-details">Selenium WebDriver, Cucumber BDD, JUnit, TestNG, Maven, Cypress.js,
+                        Mocha, Chai, PyTest</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>API Testing</span>
+                    </div>
+                    <div class="skill-details">RESTful APIs, Karate, Postman</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Back-End Development</span>
+                    </div>
+                    <div class="skill-details">Java (Spring Boot, JPA, JDBC)</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Front-End Development</span>
+                    </div>
+                    <div class="skill-details">React, JQuery, Bootstrap</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Databases</span>
+                    </div>
+                    <div class="skill-details">MySQL, MongoDB, Oracle, Postgres</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Version Control</span>
+                    </div>
+                    <div class="skill-details">Git, Bitbucket</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>DevOps / Tools</span>
+                    </div>
+                    <div class="skill-details">Docker, Kubernetes, Jenkins, Lightspeed, SonarQube</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Scripting / Automation</span>
+                    </div>
+                    <div class="skill-details">Bash / Shell scripting</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Content -->
+        <div id="details-experience">
+            <h2 style="margin-bottom: 20px;">Experience</h2>
+            <div class="vertical-list-container">
+                <div class="skill-category expanded">
+                    <div class="skill-header" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <span style="color: var(--accent-color); font-size: 0.9rem;">Nov 2024 – Present</span>
+                        <span style="font-weight: bold;">Revature LLC (Contract at CitiGroup)</span>
+                    </div>
+                    <div class="skill-details">
+                        <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+                            <li>Supported CitiGroup’s Python-based EUC risk analytics initiative.</li>
+                            <li>Built a file comparison utility for internal data validation.</li>
+                            <li>Debugged Python code across multiple environments.</li>
+                            <li>Performed manual and automated testing.</li>
+                            <li>Developed BDD test automation with Cucumber and Selenium.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <span style="color: var(--accent-color); font-size: 0.9rem;">Jun 2024 – Aug 2024</span>
+                        <span style="font-weight: bold;">Revature LLC</span>
+                    </div>
+                    <div class="skill-details">
+                        <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+                            <li>Built and tested RESTful APIs using Spring Boot and Java.</li>
+                            <li>Practiced TDD/BDD with JUnit, Mockito, and Cucumber.</li>
+                            <li>Used Maven for builds and Git for version control.</li>
+                            <li>Gained hands-on experience with Docker, Kubernetes, and SQL.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <span style="color: var(--accent-color); font-size: 0.9rem;">July 2023 – Nov 2024</span>
+                        <span style="font-weight: bold;">Upwork – Freelance QA</span>
+                    </div>
+                    <div class="skill-details">
+                        <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+                            <li>Collaborated with clients on web/mobile QA projects.</li>
+                            <li>Executed tests, reported bugs, and verified fixes.</li>
+                            <li>Conducted functional, usability, and cross-platform testing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Content -->
+        <div id="details-education">
+            <h2 style="margin-bottom: 20px;">Education</h2>
+            <div class="vertical-list-container">
+                <div class="skill-category expanded">
+                    <div class="skill-header" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <span style="font-weight: bold;">McCombs School of Business, UT Austin</span>
+                    </div>
+                    <div class="skill-details">
+                        Professional Certificate in Full Stack Software Development
+                    </div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <span style="font-weight: bold;">Cydeo</span>
+                    </div>
+                    <div class="skill-details">
+                        Certificate in Software Development Engineer in Test
+                    </div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <span style="font-weight: bold;">Amur State University</span>
+                    </div>
+                    <div class="skill-details">
+                        Diploma in Business Administration & Strategic Management
+                    </div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <span style="font-weight: bold;">Blagoveshchensk State Pedagogical University</span>
+                    </div>
+                    <div class="skill-details">
+                        M.S. in Mathematics & Physics, Minor in Psychology & Pedagogic
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certificates Content -->
+        <div id="details-certs">
+            <h2 style="margin-bottom: 20px;">Certificates</h2>
+            <div class="certs-container">
+                <div class="cert-item" onclick="toggleCertificate(this)">
+                    <span>UT Austin Full Stack</span>
+                    <img class="cert-img" src="./assets/files/texas-univ-cert.png" alt="UT Austin Cert">
+                </div>
+                <div class="cert-item" onclick="toggleCertificate(this)">
+                    <span>ISTQB CTFL</span>
+                    <img class="cert-img" src="./assets/files/istqb-cert.png" alt="ISTQB Cert">
+                </div>
+                <div class="cert-item" onclick="toggleCertificate(this)">
+                    <span>Cydeo SDET</span>
+                    <img class="cert-img" src="./assets/files/cydeo-cert.png" alt="Cydeo Cert">
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
