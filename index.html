@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/02b9f7c904.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <title>Personal portfolio Vit Efimov</title>
 </head>
 
@@ -49,16 +56,8 @@
                     <!-- banner -->
                     <div class="banner">
                         <div class="banner-container">
-                            <!-- <video class="banner-container__slide" controls autoplay muted loop onclick='window.open("https://test-manager-redux.vercel.app/", "_blank")' -->
-                            <!-- <video class="banner-container__slide" controls autoplay muted loop ></video>">
-                                <source src="./assets/video/task-manager-video.mp4">
-                            </video> -->
-                            <!-- <video class="banner-container__slide" controls autoplay muted loop>
-                                <source src="./assets/video/food-order-app.mp4">
-                            </video> -->
                             <img class="banner-container__slide" src="./assets/gifs/task-manager-app.gif" alt="">
                             <img class="banner-container__slide" src="./assets/images/ecommerceApp.jpg" alt="">
-
                         </div>
 
                         <!-- banner navigation dots -->
@@ -74,331 +73,82 @@
 
     </div>
     <div id="header-writer" onload="typeWriter()"></div>
-    <!-- about -->
+
+    <!-- about (Bento Grid) -->
     <div id="about">
         <div class="container">
-            <div class="about__content">
-                <div class="about__content__col1">
-                    <img src="./assets/images/portrait.jpg">
-                </div>
-                <!-- <div class="about__content__col2">
-                    <h1 class="sub__title">About Me</h1>
-                    <p class="about__description">
-                        Self-driven QA Test Automation Engineer and aspiring Full-Stack Web Developer with expertise in
-                        Java,
-                        JavaScript, Selenium WebDriver, Cucumber BDD, and Agile Scrum. Enthusiastic about web
-                        development,
-                        RESTful APIs, Node.js, React, and databases.</p>
-                    <div class="about__links">
-                        <p class="about__link active_link" onclick="openTab('skills')">Skills</p>
-                        <p class="about__link" onclick="openTab('experiance')">Experiance</p>
-                        <p class="about__link" onclick="openTab('education')">Education</p>
-                        <p class="about__link" onclick="openTab('certificates')">Certificates</p>
-                    </div>
-                    <div class="about__content-tab active_tab" id="skills">
-                        <ul class="about__list">
-                            <li class="about__item">
-                                <span class="about__item-title">QA Test Automation Engineer</span>
-                                <br>
-                                <p class="about__item-content">Manual and automation testing of web
-                                    applications</p>
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">Web Development</span>
-                                <br>
-                                <p class="about__item-content">Designed and implemented the front-end back-end app</p>
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">Sales</span>
-                                <br>
-                                <p class="about__item-content">Sale of high-tech industrial equipment</p>
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">Management</span><br>
-                                <p class="about__item-content">Organization and Management of the Foreign Economic
-                                    Activity Department, including Sales, Production Coordination, Logistics, and
-                                    Primary Accounting</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="about__content-tab" id="experiance">
-                        <ul class="about__list">
-                            <li class="about__item">
-                                <span class="about__item-title">2023-current</span>
-                                <br>
-
-
-
-                                <p class="about__item-content">Upwork</p>
-                                <ul class="about__item-subcontent">
-                                    <li>Collaborated with clients to understand project requirements, scope,
-                                        and objectives.</li>
-                                    <li>Executed test cases, identified and reported software defects, and
-                                        verified bug fixes.</li>
-                                    <li>Conducted functional, usability testing on web and
-                                        mobile applications.</li>
-                                    <li>Utilized various testing tools and methodologies to ensure software
-                                        quality and functionality.</li>
-                                </ul>
-
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">2022-2023</span>
-                                <br>
-                                <p class="about__item-content">Tumbcloud (Project)</p>
-                                <ul class="about__item-subcontent">
-                                    <li>Implemented Behavior Driven Development (BDD) approach with
-                                        Cucumber, creating Gherkin-format Feature files aligned with user stories.</li>
-                                    <li>Integrated automation scripts (Selenium WebDriver API) with Jenkins, scheduling
-                                        nightly runs for continuous testing, supported automated CI/CD tools on AWS.
-                                    </li>
-                                    <li>Verified REST Web Services APIs through CRUD operations (GET, POST, PUT, DELETE)
-                                        to ensure valid JSON/XML responses.</li>
-                                    <li>Developed automation scripts using Java, SQL, Selenium WebDriver, Maven, JUnit,
-                                        and Cucumber.</li>
-                                </ul>
-
-
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">2022-2023</span>
-                                <br>
-                                <p class="about__item-content">Locaper (Project)</p>
-                                <ul class="about__item-subcontent">
-                                    <li>Spearheaded the development and design of an automation framework for
-                                        a web-based application, leveraging Java, Selenium WebDriver, TestNG, and
-                                        Maven.</li>
-                                    <li>Implemented the Page Object Model (POM) design pattern within the
-                                        framework to enhance maintainability and scalability.</li>
-                                    <li>Utilized Selenium WebDriver extensively for API testing, ensuring robust
-                                        and reliable automation of web applications.</li>
-                                    <li>Collaborated actively in test case preparation using Selenium WebDriver,
-                                        validating UI components, popups, windows, and mouse movements.</li>
-                                </ul>
-                            <li class="about__item">
-                                <span class="about__item-title"></span>
-                                <br>
-                                <p class="about__item-content">Other experiance:</p>
-                                <ul class="about__item-subcontent">
-                                    <li>Manager/Regional Director of Sales and Marketing</li>
-                                    <li>Construction Contractor</li>
-                                    <li>Teacher Intern</li>
-                                    <li>Poker Dealer</li>
-                                </ul>
-
-                            </li>
-                        </ul>
-                    </div> -->
-                <div class="about__content__col2">
-                    <h1 class="sub__title">About Me</h1>
-                    <p class="about__description">
-                        QA Automation Engineer and aspiring Full-Stack Developer skilled in Python, Java, JavaScript,
-                        and the MERN stack.
-                        Experienced in test automation (Selenium, Cucumber, Cypress), backend development, and Agile
-                        workflows.
-                        Passionate about building scalable cloud applications and delivering high-quality software
-                        solutions.
-                    </p>
-                    <div class="about__links">
-                        <p class="about__link active_link" onclick="openTab('skills')">Skills</p>
-                        <p class="about__link" onclick="openTab('experiance')">Experience</p>
-                        <p class="about__link" onclick="openTab('education')">Education</p>
-                        <p class="about__link" onclick="openTab('certificates')">Certificates</p>
-                    </div>
-
-                    <!-- Skills Tab -->
-                    <div class="about__content-tab active_tab" id="skills">
-                        <ul class="about__list">
-                            <li class="about__item"><span class="about__item-title">Programming</span><br>
-                                <p class="about__item-content">Java, JavaScript, Python</p>
-                            </li>
-                            <li class="about__item"><span class="about__item-title">Testing & Automation</span><br>
-                                <p class="about__item-content">Selenium, Cypress, Cucumber, JUnit, TestNG, PyTest,
-                                    Postman</p>
-                            </li>
-                            <li class="about__item"><span class="about__item-title">Web Development</span><br>
-                                <p class="about__item-content">MERN Stack, RESTful APIs, Node.js, Express.js, React,
-                                    Bootstrap</p>
-                            </li>
-                            <li class="about__item"><span class="about__item-title">Databases</span><br>
-                                <p class="about__item-content">MongoDB, MySQL, Oracle, PostgreSQL</p>
-                            </li>
-                            <li class="about__item"><span class="about__item-title">Tools</span><br>
-                                <p class="about__item-content">Git, Jenkins, Lightspeed, Sonar, IntelliJ, VSCode,
-                                    Bitbucket</p>
-                            </li>
-                            <li class="about__item"><span class="about__item-title">Methodologies</span><br>
-                                <p class="about__item-content">Agile (Scrum, Kanban), Waterfall</p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Experience Tab -->
-                    <div class="about__content-tab" id="experiance">
-                        <ul class="about__list">
-                            <li class="about__item">
-                                <span class="about__item-title">Nov 2024 – Present</span><br>
-                                <p class="about__item-content">Revature LLC (Contract at CitiGroup)</p>
-                                <ul class="about__item-subcontent">
-                                    <li>Supported CitiGroup’s Python-based EUC risk analytics initiative.</li>
-                                    <li>Built a file comparison utility for internal data validation.</li>
-                                    <li>Debugged Python code across multiple environments.</li>
-                                    <li>Performed manual and automated testing.</li>
-                                    <li>Developed BDD test automation with Cucumber and Selenium.</li>
-                                </ul>
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">Jun 2024 – Aug 2024</span><br>
-                                <p class="about__item-content">Revature LLC</p>
-                                <ul class="about__item-subcontent">
-                                    <li>Built and tested RESTful APIs using Spring Boot and Java.</li>
-                                    <li>Practiced TDD/BDD with JUnit, Mockito, and Cucumber.</li>
-                                    <li>Used Maven for builds and Git for version control.</li>
-                                    <li>Gained hands-on experience with Docker, Kubernetes, and SQL.</li>
-                                </ul>
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">July 2023 – Nov 2024</span><br>
-                                <p class="about__item-content">Upwork – Freelance QA</p>
-                                <ul class="about__item-subcontent">
-                                    <li>Collaborated with clients on web/mobile QA projects.</li>
-                                    <li>Executed tests, reported bugs, and verified fixes.</li>
-                                    <li>Conducted functional, usability, and cross-platform testing.</li>
-                                </ul>
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">2022 – 2023</span><br>
-                                <p class="about__item-content">Tumbcloud (Project)</p>
-                                <ul class="about__item-subcontent">
-                                    <li>Implemented BDD with Cucumber and Gherkin.</li>
-                                    <li>Integrated Selenium tests with Jenkins and AWS pipelines.</li>
-                                    <li>Tested RESTful APIs via CRUD operations.</li>
-                                </ul>
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">2022 – 2023</span><br>
-                                <p class="about__item-content">Locaper (Project)</p>
-                                <ul class="about__item-subcontent">
-                                    <li>Built automation framework with Java, TestNG, and POM design.</li>
-                                    <li>Automated UI and API testing using Selenium WebDriver.</li>
-                                </ul>
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">2009 – 2015</span><br>
-                                <p class="about__item-content">Shanghai Technologies</p>
-                                <ul class="about__item-subcontent">
-                                    <li>Regional Director of Sales & Marketing managing 12 staff.</li>
-                                    <li>Oversaw sales forecasting, budgeting, and logistics.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Education Tab -->
-                    <div class="about__content-tab" id="education">
-                        <ul class="about__list">
-                            <li class="about__item">
-                                <span class="about__item-title">McCombs School of Business, UT Austin</span><br>
-                                <p class="about__item-content">Professional Certificate in Full Stack Software
-                                    Development</p>
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">Cydeo</span><br>
-                                <p class="about__item-content">Certificate in Software Development Engineer in Test</p>
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">Amur State University</span><br>
-                                <p class="about__item-content">Diploma in Business Administration & Strategic Management
-                                </p>
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">Blagoveshchensk State Pedagogical University</span><br>
-                                <p class="about__item-content">M.S. in Mathematics & Physics, Minor in Psychology &
-                                    Pedagogic</p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Certificates Tab -->
-                    <!-- <div class="about__content-tab" id="certificates">
-                            <ul class="about__list">
-                                <li class="about__item">
-                                    <span class="about__item-title">ISTQB CTFL Certification</span><br>
-                                    <p class="about__item-content">Certification ID: 23-CTFL-03615-USA (U.S. Foundation V4.0)</p>
-                                </li>
-                            </ul>
+            <h1 class="sub__title">About Me</h1>
+            <div class="bento-grid">
+                <!-- Profile Card -->
+                <div class="bento-card profile-card">
+                    <img src="./assets/images/portrait.jpg" alt="Vit Efimov">
+                    <div class="profile-info">
+                        <h2>Vit Efimov</h2>
+                        <p>QA Automation Engineer & Full-Stack Developer</p>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/vitalii-e-b56118276" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/VitEfimov" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
                         </div>
-                    </div> -->
-
-                    <div class="about__content-tab" id="education">
-                        <ul class="about__list">
-                            <li class="about__item">
-                                <span class="about__item-title">May 2023 - April 2024
-                                </span>
-                                <br>
-                                <p class="about__item-content">McCombs School of Business,
-                                    The University of Texas at Austin.</p>
-                                <p class="about__item-subcontent">Professional Certificate in Full Stack Software
-                                    Development: Building
-                                    Scalable Cloud Applications.</p>
-
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">June 2022 - January 2023</span>
-                                <br>
-                                <p class="about__item-content">Cydeo.</p>
-                                <p class="about__item-subcontent">
-                                    Certificate in Software Development
-                                    Engineer in Test.</p>
-
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">November 2012 – June 2013</span>
-                                <br>
-                                <p class="about__item-content">Amur State University.<br>
-                                <p class="about__item-subcontent">Professional Retraining Diploma in Business
-                                    Administration & Strategic
-                                    Management.</p>
-                                </p>
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">September 2001 – June
-                                    2007</span>
-                                <p class="about__item-content">Blagoveshchensk State Pedagogical University.</p>
-                                <p class="about__item-subcontent">Bachelor of Science
-                                    Concentration: Mathematics, Physics.</p>
-
-                            </li>
-                        </ul>
                     </div>
-                    <div class="about__content-tab" id="certificates">
-                        <ul class="about__list">
-                            <li class="about__item">
-                                <span class="about__item-title">Certificate in Full Stack Software Development
-                                </span><br /><br />
-                                <img class="about__item-certificate" src="./assets/files/texas-univ-cert.png" alt="McCombs School of Business,
-                                The University of Texas at Austin cetrificate" onclick="toggleCertificate(this)">
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">ISTQB CTFL Certification in the U.S. Foundation
-                                    V4.0</span>
-                                <br /><br />
-                                <img class="about__item-certificate" src="./assets/files/istqb-cert.png"
-                                    alt="ISTQB CTFL Certification" onclick="toggleCertificate(this)">
-                            </li>
-                            <li class="about__item">
-                                <span class="about__item-title">Software Development Engineer in Test</span>
-                                <br /><br />
-                                <img class="about__item-certificate" src="./assets/files/cydeo-cert.png"
-                                    alt="Software Development Engineer in Test" onclick="toggleCertificate(this)">
-                            </li>
+                </div>
 
-                        </ul>
-                    </div>
+                <!-- Bio Card -->
+                <div class="bento-card bio-card">
+                    <h3>Bio</h3>
+                    <p>
+                        QA Automation Engineer and Software Engineer with hands-on experience supporting Python-based
+                        data systems,
+                        test automation frameworks, and backend services in regulated environments. Strong background in
+                        Python, Java, JavaScript, and full-stack development (MERN),
+                        with proven ability to automate data validation, improve testing efficiency, and support
+                        analytical models.
+                        Brings a unique blend of technical expertise and over 6 years of prior experience in logistics,
+                        international trade, and operations,
+                        providing a strong foundation in process accuracy, compliance, data reconciliation, and
+                        stakeholder communication.
+                        Known for attention to detail, analytical thinking, and the ability to bridge business
+                        requirements with technical solutions.
+
+                    </p>
+                </div>
+
+                <!-- Skills Card -->
+                <div class="bento-card skills-card clickable-card" onclick="openModal('details-skills')">
+                    <h3>Skills</h3>
+                    <i class="fa-solid fa-code"
+                        style="font-size: 3rem; color: var(--accent-color); margin: 20px 0;"></i>
+                    <p>Click to view detailed skills & technologies</p>
+                </div>
+
+                <!-- Experience Card -->
+                <div class="bento-card experience-card clickable-card" onclick="openModal('details-experience')">
+                    <h3>Experience</h3>
+                    <i class="fa-solid fa-briefcase"
+                        style="font-size: 3rem; color: var(--accent-color); margin: 20px 0;"></i>
+                    <p>Click to view work history</p>
+                </div>
+
+                <!-- Education Card -->
+                <div class="bento-card education-card clickable-card" onclick="openModal('details-education')">
+                    <h3>Education</h3>
+                    <i class="fa-solid fa-graduation-cap"
+                        style="font-size: 3rem; color: var(--accent-color); margin: 20px 0;"></i>
+                    <p>Click to view education details</p>
+                </div>
+
+                <!-- Certificates Card -->
+                <div class="bento-card certs-card clickable-card" onclick="openModal('details-certs')">
+                    <h3>Certificates</h3>
+                    <i class="fa-solid fa-certificate"
+                        style="font-size: 3rem; color: var(--accent-color); margin: 20px 0;"></i>
+                    <p>Click to view certifications</p>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="parallax second">
         <!-- services -->
         <!-- Modal -->
@@ -463,6 +213,20 @@
         <div class="container">
             <h1 class="sub__title">Projects</h1>
             <div class="project__list">
+                <!-- https://forcust-tool-antigravity.vercel.app/# -->
+                <div class="project">
+                    <img src="./assets/images/forecust-app.png" alt="forecast">
+                    <div class="layer">
+                        <h3>Forecast Stock Market</h3>
+                        <div class="description">
+                            Python-based stock market forecasting tool using historical data to predict future
+                            trends.(re-run after 5 minutes(render.com)).
+                        </div>
+                        <!-- <a href="https://github.com/VitEfimov/File_comparator" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+                        <a href="https://forcust-tool-antigravity.vercel.app/#" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
                 <div class="project">
                     <img src="./assets/images/file_compare.PNG" alt="file_compare">
                     <div class="layer">
@@ -604,7 +368,53 @@
         // });
     </script>
 
+    <!-- script navigation menu -->
+    <script>
+        var sideMenu = document.getElementById("sidemenu");
+        var sideMenuIcon = document.getElementById("menuicon");
 
+        function openMenu() {
+            sideMenu.style.right = "0px";
+            sideMenuIcon.style.display = "none";
+            sideMenuIcon.style.right = "-300px";
+        }
+        function closeMenu() {
+            sideMenu.style.right = "-300px";
+            sideMenuIcon.style.display = "block";
+            sideMenuIcon.style.right = "0px";
+        }
+    </script>
+
+    <!-- banner script -->
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.banner-container__slide');
+        const dots = document.querySelectorAll('.navigation-dots__dot');
+
+        showSlide();
+
+        function showSlide() {
+            slides.forEach(slide => slide.style.opacity = 0);
+            dots.forEach(dot => dot.classList.remove("active"));
+
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.opacity = 1;
+            dots[slideIndex - 1].classList.add("active");
+
+            setTimeout(showSlide, 45000);
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                slideIndex = index;
+                showSlide();
+            });
+        });
+    </script>
 
     <script>
         function toggleCertificate(image) {
@@ -612,9 +422,30 @@
         }
     </script>
 
-    <!-- modal window -->
-
+    <!-- modal script -->
     <script>
+        // Generic Modal Logic
+        function openModal(contentId) {
+            const modal = document.getElementById('myModal');
+            const modalText = document.querySelector('.modal-text');
+            const sourceContent = document.getElementById(contentId);
+
+            if (sourceContent) {
+                modalText.innerHTML = sourceContent.innerHTML;
+                modal.style.display = "block";
+
+                // Re-initialize animations or interactions if needed
+                // For example, if you want animations to play when modal opens
+            }
+        }
+
+        // Services Modal Logic (Keep existing functionality if consistent, or adapt)
+        // Note: The Services section uses 'learn-more' class. We can adapt it to reuse the openModal if we restructured it,
+        // but for now, we'll keep the existing listeners for services to avoid breaking that section,
+        // OR we can merge them. The user didn't ask to refactor Services, so let's leave Services as is 
+        // BUT we need to make sure the modal elements don't conflict. 
+        // The existing modal #myModal is used for both.
+
         document.querySelectorAll('.learn-more').forEach(item => {
             item.addEventListener('click', event => {
                 const parentDiv = event.target.parentElement;
@@ -623,11 +454,11 @@
                 const secondParagraph = parentDiv.querySelector('p.services__item-hidden').textContent;
                 const serviceName = parentDiv.querySelector('h2').textContent;
                 const modalText = document.querySelector('.modal-text');
+
                 modalText.innerHTML = `<h2>${serviceName}</h2><p>${firstParagraph} ${secondParagraph}</p>`;
+
                 const modal = document.getElementById('myModal');
                 modal.style.display = "block";
-                modal.style.color = "black";
-                // modal.style.width = "fit-content";
             });
         });
 
@@ -644,8 +475,6 @@
                 modal.style.display = "none";
             }
         });
-
-
     </script>
 
     <!-- see more btn -->
@@ -686,124 +515,6 @@
 
             seeMoreBtn.addEventListener('click', openProject);
         });
-
-
-
-    </script>
-
-    <!-- services script -->
-    <script>
-
-        // document.querySelectorAll('.learn-more').forEach(item => {
-        //     item.addEventListener('click', event => {
-        //         const parentDiv = event.target.parentElement;
-        //         const secondParagraph = parentDiv.querySelector('p.hidden');
-        //         secondParagraph.classList.toggle('show');
-        //     });
-        // });
-    </script>
-
-
-
-    <!-- script navigation menu -->
-
-    <script>
-        var sideMenu = document.getElementById("sidemenu");
-        var sideMenuIcon = document.getElementById("menuicon");
-        function openMenu() {
-            sideMenu.style.right = "0px";
-            sideMenuIcon.style.display = "none";
-            sideMenuIcon.style.right = "-500px";
-        }
-        function closeMenu() {
-            sideMenu.style.right = "-500px";
-            sideMenuIcon.style.display = "block";
-            sideMenuIcon.style.right = "0px";
-        }
-    </script>
-
-    <!-- banner script -->
-
-    <script>
-        let slideIndex = 0;
-        const slides = document.querySelectorAll('.banner-conteiner__slide');
-        const dots = document.querySelectorAll('.navigation-dots__dot');
-
-        showSlide();
-
-        function showSlide() {
-
-            slides.forEach(slide => slide.style.opacity = 0);
-            dots.forEach(dot => dot.classList.remove("active"));
-
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-
-            slides[slideIndex - 1].style.opacity = 1;
-            dots[slideIndex - 1].classList.add("active");
-
-            setTimeout(showSlide, 45000);
-        }
-        function clickSlide() {
-            slides.forEach((slide) => {
-                slide.addEventListener('click', () => {
-                    slideIndex = index;
-                    showSlide();
-                });
-            }
-            )
-        }
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                slideIndex = index;
-                showSlide();
-            });
-        });
-    </script>
-
-    <!-- script google sheet -->
-    <!-- <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbynna31z8cZmJzdRDaLDND30B1_UnPb-DY4U-IIsnpGaN-4CTdKcoX04-Z_kZ7YaLK2qg/exec'
-        const form = document.forms['submit-to-google-sheet'];
-
-        const msg = document.getElementById('resMsg')
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function () {
-                        msg.innerHTML = "";
-                    }, 5000);
-                    form.reset();
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script> -->
-    <script>
-        // document.addEventListener('DOMContentLoaded', function () {
-        //     const scriptURL = 'https://script.google.com/macros/s/AKfycbynna31z8cZmJzdRDaLDND30B1_UnPb-DY4U-IIsnpGaN-4CTdKcoX04-Z_kZ7YaLK2qg/exec'
-        //     // <!-- const scriptURL =  'https://script.google.com/macros/s/AKfycbwKUXL_i1QqhPCi3YNg_AYrsX3daoZih1JKsjxztAfA/dev' -->
-        //     const form = document.forms['submit-to-google-sheet'];
-        //     const msg = document.getElementById('resMsg')
-
-        //     form.addEventListener('submit', e => {
-        //         e.preventDefault()
-        //         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        //             .then(response => {
-        //                 msg.innerHTML = "Message sent successfully"
-        //                 setTimeout(() => msg.innerHTML = "", 3000);
-        //                 form.reset();
-        //             })
-        //             .catch(error => {
-        //                 msg.innerHTML = "Error occurred";
-        //                 console.error('Error!', error.message)
-        //             });
-        //     });
-        // });
     </script>
 
     <script>
@@ -850,6 +561,197 @@
         });
 
     </script>
+
+    <!-- Hidden Content for Modals -->
+    <div id="hidden-content" style="display: none;">
+        <!-- Skills Content -->
+        <div id="details-skills">
+            <h2 style="margin-bottom: 20px;">Skills</h2>
+            <div class="skills-container-new">
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>AI</span>
+                    </div>
+                    <div class="skill-details">Prompt Engineering</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Programming Languages</span>
+                    </div>
+                    <div class="skill-details">Java, JavaScript, Python</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Data Analysis</span>
+                    </div>
+                    <div class="skill-details">Pandas, Apache Airflow</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Manual Testing</span>
+                    </div>
+                    <div class="skill-details">Test Case Design & Execution, Defect Tracking & Reporting, Regression
+                        Testing, Usability Testing, Cross-Browser Testing, Mobile App Testing</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Test Automation</span>
+                    </div>
+                    <div class="skill-details">Selenium WebDriver, Cucumber BDD, JUnit, TestNG, Maven, Cypress.js,
+                        Mocha, Chai, PyTest</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>API Testing</span>
+                    </div>
+                    <div class="skill-details">RESTful APIs, Karate, Postman</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Back-End Development</span>
+                    </div>
+                    <div class="skill-details">Java (Spring Boot, JPA, JDBC)</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Front-End Development</span>
+                    </div>
+                    <div class="skill-details">React, JQuery, Bootstrap</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Databases</span>
+                    </div>
+                    <div class="skill-details">MySQL, MongoDB, Oracle, Postgres</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Version Control</span>
+                    </div>
+                    <div class="skill-details">Git, Bitbucket</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>DevOps / Tools</span>
+                    </div>
+                    <div class="skill-details">Docker, Kubernetes, Jenkins, Lightspeed, SonarQube</div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header">
+                        <span>Scripting / Automation</span>
+                    </div>
+                    <div class="skill-details">Bash / Shell scripting</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Content -->
+        <div id="details-experience">
+            <h2 style="margin-bottom: 20px;">Experience</h2>
+            <div class="vertical-list-container">
+                <div class="skill-category expanded">
+                    <div class="skill-header" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <span style="color: var(--accent-color); font-size: 0.9rem;">Nov 2024 – Present</span>
+                        <span style="font-weight: bold;">Revature LLC (Contract at CitiGroup)</span>
+                    </div>
+                    <div class="skill-details">
+                        <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+                            <li>Supported CitiGroup’s Python-based EUC risk analytics initiative.</li>
+                            <li>Built a file comparison utility for internal data validation.</li>
+                            <li>Debugged Python code across multiple environments.</li>
+                            <li>Performed manual and automated testing.</li>
+                            <li>Developed BDD test automation with Cucumber and Selenium.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <span style="color: var(--accent-color); font-size: 0.9rem;">Jun 2024 – Aug 2024</span>
+                        <span style="font-weight: bold;">Revature LLC</span>
+                    </div>
+                    <div class="skill-details">
+                        <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+                            <li>Built and tested RESTful APIs using Spring Boot and Java.</li>
+                            <li>Practiced TDD/BDD with JUnit, Mockito, and Cucumber.</li>
+                            <li>Used Maven for builds and Git for version control.</li>
+                            <li>Gained hands-on experience with Docker, Kubernetes, and SQL.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <span style="color: var(--accent-color); font-size: 0.9rem;">July 2023 – Nov 2024</span>
+                        <span style="font-weight: bold;">Upwork – Freelance QA</span>
+                    </div>
+                    <div class="skill-details">
+                        <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+                            <li>Collaborated with clients on web/mobile QA projects.</li>
+                            <li>Executed tests, reported bugs, and verified fixes.</li>
+                            <li>Conducted functional, usability, and cross-platform testing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Content -->
+        <div id="details-education">
+            <h2 style="margin-bottom: 20px;">Education</h2>
+            <div class="vertical-list-container">
+                <div class="skill-category expanded">
+                    <div class="skill-header" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <span style="font-weight: bold;">McCombs School of Business, UT Austin</span>
+                    </div>
+                    <div class="skill-details">
+                        Professional Certificate in Full Stack Software Development
+                    </div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <span style="font-weight: bold;">Cydeo</span>
+                    </div>
+                    <div class="skill-details">
+                        Certificate in Software Development Engineer in Test
+                    </div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <span style="font-weight: bold;">Amur State University</span>
+                    </div>
+                    <div class="skill-details">
+                        Diploma in Business Administration & Strategic Management
+                    </div>
+                </div>
+                <div class="skill-category expanded">
+                    <div class="skill-header" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                        <span style="font-weight: bold;">Blagoveshchensk State Pedagogical University</span>
+                    </div>
+                    <div class="skill-details">
+                        M.S. in Mathematics & Physics, Minor in Psychology & Pedagogic
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certificates Content -->
+        <div id="details-certs">
+            <h2 style="margin-bottom: 20px;">Certificates</h2>
+            <div class="certs-container">
+                <div class="cert-item" onclick="toggleCertificate(this)">
+                    <span>UT Austin Full Stack</span>
+                    <img class="cert-img" src="./assets/files/texas-univ-cert.png" alt="UT Austin Cert">
+                </div>
+                <div class="cert-item" onclick="toggleCertificate(this)">
+                    <span>ISTQB CTFL</span>
+                    <img class="cert-img" src="./assets/files/istqb-cert.png" alt="ISTQB Cert">
+                </div>
+                <div class="cert-item" onclick="toggleCertificate(this)">
+                    <span>Cydeo SDET</span>
+                    <img class="cert-img" src="./assets/files/cydeo-cert.png" alt="Cydeo Cert">
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
